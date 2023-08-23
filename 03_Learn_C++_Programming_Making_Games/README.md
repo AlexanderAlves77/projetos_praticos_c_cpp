@@ -8,3 +8,6 @@ In this section we'll remember a little bit about classes and how objects are ju
 
 ### Section 03 The particulars
 In this section we cover a little more about class, constructor initialization, destructor, scope and pointer.
+
+### Section 04 To instantiate or not to instantiate
+Since we know now that strikes and classes are very similar it should come as no surprise to you how you would call methods on objects.
