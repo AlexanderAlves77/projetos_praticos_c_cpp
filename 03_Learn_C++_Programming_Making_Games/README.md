@@ -14,3 +14,6 @@ Since we know now that strikes and classes are very similar it should come as no
 
 ### Section 05 Hello operator my old friend
 Operators in C++ are really just a special type of function calls.
+
+### Section 06 Lets make thing a Nobody said there would be math
+Using a bit of math with vectors, operators for games
