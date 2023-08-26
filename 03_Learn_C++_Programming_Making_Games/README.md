@@ -17,3 +17,6 @@ Operators in C++ are really just a special type of function calls.
 
 ### Section 06 Lets make thing a Nobody said there would be math
 Using a bit of math with vectors, operators for games
+
+### Section 07 Dynamic Memory
+
