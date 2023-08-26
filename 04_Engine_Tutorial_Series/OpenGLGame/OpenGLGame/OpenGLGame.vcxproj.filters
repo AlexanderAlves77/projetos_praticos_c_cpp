@@ -24,9 +24,15 @@
     <ClCompile Include="OGL3D\source\OGL3D\Window\OWindow.cpp">
       <Filter>Arquivos de Origem</Filter>
     </ClCompile>
+    <ClCompile Include="OGL3D\source\OGL3D\Game\OGame.cpp">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="OGL3D\include\OGL3D\Window\OWindow.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="OGL3D\include\OGL3D\Game\OGame.h">
       <Filter>Arquivos de Cabeçalho</Filter>
     </ClInclude>
   </ItemGroup>
