@@ -10,3 +10,6 @@ Constrói uma janela para testar a classe Window do DXUT.
 
 ### Aula 03
 Testa funcionalidades de leitura do teclado
+
+### Aula 04
+Testa a execução de uma aplicação em um laço de tempo-real
