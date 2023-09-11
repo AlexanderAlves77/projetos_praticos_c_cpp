@@ -19,4 +19,4 @@ Operators in C++ are really just a special type of function calls.
 Using a bit of math with vectors, operators for games
 
 ### Section 07 Dynamic Memory
-
+There are a few considerations will need to take into account when we deal with dynamic memory in classes.
