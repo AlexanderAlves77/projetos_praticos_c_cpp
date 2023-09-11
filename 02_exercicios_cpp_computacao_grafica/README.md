@@ -13,3 +13,4 @@ Testa funcionalidades de leitura do teclado
 
 ### Aula 04
 Testa a execução de uma aplicação em um laço de tempo-real
+Testa as funcionalidades de animação do motor DXUT
