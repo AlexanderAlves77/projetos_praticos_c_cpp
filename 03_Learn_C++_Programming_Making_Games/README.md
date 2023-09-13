@@ -20,3 +20,6 @@ Using a bit of math with vectors, operators for games
 
 ### Section 07 Dynamic Memory
 There are a few considerations will need to take into account when we deal with dynamic memory in classes.
+
+### Section 08 Make a thing: A line
+Let's set up our SDL to our Kate project and start off by.
