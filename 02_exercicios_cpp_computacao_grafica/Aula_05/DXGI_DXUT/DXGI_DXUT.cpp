@@ -1,13 +1,12 @@
-/**********************************************************************************
-// DXGI_DXUT (Código Fonte)
-//
-// Criação:     19 Jan 2020
-// Atualização: 04 Ago 2021
-// Compilador:  Visual C++ 2019
-//
-// Descrição:   Testa a infraestrutura gráfica do DirectX
-//
-**********************************************************************************/
+/*=================================================================================
+*  Arquivo     : DXGI_DXUT (Código Fonte)
+*  Author      : Alexander Alves
+*  Criação     : 14 Set 2023
+*  Compilador  : Visual C++ 2019
+*  Atualização : 14 Set 2023
+*
+*  Descrição   : Testa a infraestrutura gráfica do DirectX
+===================================================================================*/
 
 #include "DXUT.h"
 
