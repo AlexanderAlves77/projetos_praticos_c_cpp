@@ -1,16 +1,14 @@
-/**********************************************************************************
-// App (Código Fonte)
-//
-// Criação:     11 Jan 2020
-// Atualização: 04 Ago 2021
-// Compilador:  Visual C++ 2019
-//
-// Descrição:   Uma classe abstrata para representar uma aplicação
-//
-//              Todas as aplicações derivadas da classe App devem
-//              sobrescrever os métodos Init, Update, Draw e Finalize.
-//
-**********************************************************************************/
+/*=================================================================================
+*  Arquivo     : App (Código Fonte)
+*  Author      : Alexander Alves
+*  Criação     : 14 Set 2023
+*  Compilador  : Visual C++ 2019
+*  Atualização : 14 Set 2023
+*
+*  Descrição   : Uma classe abstrata para representar uma aplicação
+*                Todas as aplicações derivadas da classe App devem
+*                sobrescrever os métodos Init, Update, Draw e Finalize.
+===================================================================================*/
 
 #include "App.h"
 #include "Engine.h"
