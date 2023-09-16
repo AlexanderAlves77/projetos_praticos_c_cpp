@@ -1,3 +1,15 @@
+/*=================================================================================
+*  Arquivo     : Engine (Código Fonte)
+*  Author      : Alexander Alves
+*  Criação     : 14 Set 2023
+*  Compilador  : Visual C++ 2019
+*  Atualização : 14 Set 2023
+*
+*  Descrição   : A Engine roda aplicações criadas a partir da classe App.
+*                Para usar a Engine crie uma instância e chame o método
+*                Start() com um objeto derivado da classe App.
+===================================================================================*/
+
 /**********************************************************************************
 // Engine (Código Fonte)
 //

@@ -1,16 +1,14 @@
-/**********************************************************************************
-// Engine (Arquivo de Cabeçalho)
-//
-// Criação:		15 Mai 2014
-// Atualização:	04 Ago 2021
-// Compilador:	Visual C++ 2019
-//
-// Descrição:	A Engine roda aplicações criadas a partir da classe App. 
-//				
-//              Para usar a Engine crie uma instância e chame o método
-//				Start() com um objeto derivado da classe App.
-//
-**********************************************************************************/
+/*=================================================================================
+*  Arquivo     : Engine (Arquivo de Cabeçalho)
+*  Author      : Alexander Alves
+*  Criação     : 14 Set 2023
+*  Compilador  : Visual C++ 2019
+*  Atualização : 14 Set 2023
+*
+*  Descrição   : A Engine roda aplicações criadas a partir da classe App.
+*                Para usar a Engine crie uma instância e chame o método
+*                Start() com um objeto derivado da classe App.
+===================================================================================*/
 
 #ifndef DXUT_ENGINE_H
 #define DXUT_ENGINE_H
