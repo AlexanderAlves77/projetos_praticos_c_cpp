@@ -8,7 +8,6 @@
 *  Descrição   : Uma classe para tratamento de erros
 ===================================================================================*/
 
-
 #ifndef DXUT_ERROR_H
 #define DXUT_ERROR_H
 

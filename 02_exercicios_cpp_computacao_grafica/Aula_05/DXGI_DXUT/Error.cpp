@@ -1,13 +1,12 @@
-/**********************************************************************************
-// Error (Código Fonte)
-//
-// Criação:     25 Jan 2020
-// Atualização: 04 Ago 2021
-// Compilador:  Visual C++ 2019
-//
-// Descrição:   Uma classe para tratamento de erros
-//
-**********************************************************************************/
+/*=================================================================================
+*  Arquivo     : Engine (Código Fonte)
+*  Author      : Alexander Alves
+*  Criação     : 14 Set 2023
+*  Compilador  : Visual C++ 2019
+*  Atualização : 14 Set 2023
+*
+*  Descrição   : Uma classe para tratamento de erros
+===================================================================================*/
 
 #include "Error.h"              // tratamento de erros
 #include <comdef.h>             // definições COM para C++
