@@ -10,20 +10,6 @@
 *                Start() com um objeto derivado da classe App.
 ===================================================================================*/
 
-/**********************************************************************************
-// Engine (Código Fonte)
-//
-// Criação:		15 Mai 2014
-// Atualização:	04 Ago 2021
-// Compilador:	Visual C++ 2019
-//
-// Descrição:	A Engine roda aplicações criadas a partir da classe App.
-//
-//              Para usar a Engine crie uma instância e chame o método
-//				Start() com um objeto derivado da classe App.
-//
-**********************************************************************************/
-
 #include "Engine.h"
 #include <windows.h>
 #include <sstream>
