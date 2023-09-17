@@ -1,14 +1,13 @@
-/**********************************************************************************
-// Input (Arquivo de Cabeçalho)
-//
-// Criação:     06 Jan 2020
-// Atualização:	31 Jul 2021
-// Compilador:	Visual C++ 2019
-//
-// Descrição:	A classe Input concentra todas as tarefas relacionadas 
-//              aos dispositivos de entrada do tipo teclado e mouse.
-//
-**********************************************************************************/
+/*=================================================================================
+*  Arquivo     : Input (Arquivo de Cabeçalho)
+*  Author      : Alexander Alves
+*  Criação     : 14 Set 2023
+*  Compilador  : Visual C++ 2019
+*  Atualização : 14 Set 2023
+*
+*  Descrição   : A classe Input concentra todas as tarefas relacionadas
+*                aos dispositivos de entrada do tipo teclado e mouse.
+===================================================================================*/
 
 #ifndef DXUT_INPUT_H
 #define DXUT_INPUT_H
