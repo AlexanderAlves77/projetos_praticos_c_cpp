@@ -1,0 +1,23 @@
+/*=================================================================================
+*  Arquivo     : DXUT (Arquivo de Cabeçalho)
+*  Criação     : 15 Set 2023
+*  Author      : Alexander Alves
+*  Compilador  : Visual C++ 2019
+*  Atualização : 15 Set 2023
+*
+*  Descrição   : Arquivo mestre para o DirectX Utility Toolkit (DXUT)
+===================================================================================*/
+
+#ifndef DirectX_Utility_Toolkit_H
+#define DirectX_Utility_Tookkit_H
+
+#include "Resources.h"
+#include "Types.h"
+#include "Window.h"
+#include "Input.h"
+#include "App.h"
+#include "Engine.h"
+#include "Error.h"
+#include "Graphics.h"
+
+#endif
