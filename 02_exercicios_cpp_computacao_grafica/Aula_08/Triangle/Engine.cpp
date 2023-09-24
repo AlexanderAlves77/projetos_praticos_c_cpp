@@ -5,7 +5,7 @@
 *  Compilador  : Visual C++ 2019
 *  Atualiza��o : 15 Set 2023
 *
-*  Descri��o A Engine roda aplica��es criadas a partir da classe App.
+*  Descri��o   : A Engine roda aplica��es criadas a partir da classe App.
 *                Para usar a Engine crie uma inst�ncia e chame o m�todo
 *                Start() com um objeto derivado da classe App.
 ===================================================================================*/
