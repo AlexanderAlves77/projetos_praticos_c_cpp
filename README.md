@@ -11,8 +11,8 @@ Projetos em C e C++, para entendimento de computação gráfica.
 An in depth practical course on OOP using C++.
 Be making this arcade app from SCRATCH (mostly), using SDL for window management, input and colour but that's it!
 
-### 04 Engine Tutorial Series
-
+### 04 Exercícios Práticos Programação Orientado a Objetos
+Projetos em C e C++, para entendimento de Programação Orientado a Objetos
 
 ### 05 Programming Games 2D C++
 Development for learning some simple 2D games
