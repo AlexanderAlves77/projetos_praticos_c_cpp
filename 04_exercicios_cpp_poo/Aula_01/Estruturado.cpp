@@ -48,3 +48,19 @@ void exibir(const Jogo& jogo)
 		 << jogo.horas << "h = R$"
 		 << jogo.custo << "/h\n";
 }
+
+int main()
+{
+	// variável do tipo Jogo
+	Jogo gow;
+
+	// chamando funções 
+	gow = adquirir("Gow", 160.0f);
+	exibir(gow);
+
+	jogar(gow,5);
+	exibir(gow);
+
+	jogar(gow,3);
+	exibir(gow);
+}
