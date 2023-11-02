@@ -22,3 +22,10 @@ void Jogo::jogar(int tempo)
     calcular();
 }
 
+void Jogo::exibir() 
+{
+    std::cout << nome << " R$" 
+        << preco << " "
+        << horas << "h = R$" 
+        << custo << "/h\n";
+}
