@@ -20,3 +20,9 @@ void Jogo::atualizar(float valor)
     calcular();
 }
 
+void Jogo::jogar(int tempo)
+{
+    horas = horas + tempo;
+    calcular();
+}
+
