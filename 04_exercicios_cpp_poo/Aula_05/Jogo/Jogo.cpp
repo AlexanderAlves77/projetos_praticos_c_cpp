@@ -13,3 +13,10 @@ Jogo::Jogo(const string& titulo, float valor)
     horas = 0;
     custo = preco;
 }
+
+void Jogo::atualizar(float valor)
+{
+    preco = valor;
+    calcular();
+}
+
