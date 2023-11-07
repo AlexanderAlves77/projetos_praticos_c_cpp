@@ -22,3 +22,14 @@ Jogo::Jogo(const string& titulo, float valor)
     horas = 0;
     custo = preco;
 }
+
+Jogo::~Jogo()
+{
+    cout << "Destruindo objeto " << nome << "\n";
+}
+
+void Jogo::atualizar(float valor)
+{
+    preco = valor;
+    calcular();
+}
