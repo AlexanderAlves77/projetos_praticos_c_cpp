@@ -33,3 +33,10 @@ const Jogo& Jogo::comparar(const Jogo& jogo) const
     else
         return *this;
 }
+
+void Jogo::atualizar(float valor)
+{
+    preco = valor;
+    calcular();
+}
+
