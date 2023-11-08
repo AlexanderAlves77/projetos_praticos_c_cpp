@@ -25,3 +25,11 @@ Jogo::Jogo(const string& titulo, float valor, int tempo)
 Jogo::~Jogo()
 {
 }
+
+const Jogo& Jogo::comparar(const Jogo& jogo) const
+{
+    if (jogo.horas > horas)
+        return jogo;
+    else
+        return *this;
+}
