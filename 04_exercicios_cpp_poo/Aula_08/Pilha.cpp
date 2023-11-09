@@ -30,3 +30,16 @@ bool Pilha::Empilhar(const Item& item)
 	return false;
 }
 
+
+bool Pilha::Desempilhar(Item& item)
+{
+	if (topo > 0)
+	{
+		item = itens[--topo];
+		return true;
+	}
+
+	return false;
+}
+
+// -----------------------------------------------
