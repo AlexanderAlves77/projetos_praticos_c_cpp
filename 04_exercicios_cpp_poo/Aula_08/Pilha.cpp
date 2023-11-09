@@ -19,3 +19,14 @@ bool Pilha::Cheia() const
 	return topo == MAX;
 }
 
+bool Pilha::Empilhar(const Item& item)
+{
+	if (topo < MAX)
+	{
+		itens[topo++] = item;
+		return true;
+	}
+
+	return false;
+}
+
