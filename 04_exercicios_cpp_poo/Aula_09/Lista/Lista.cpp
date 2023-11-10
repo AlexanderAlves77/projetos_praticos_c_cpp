@@ -13,3 +13,9 @@ Lista::~Lista()
 {
 	delete[] itens;
 }
+
+bool Lista::Vazia() const
+{
+	return size == 0;
+}
+
