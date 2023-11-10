@@ -19,3 +19,8 @@ bool Lista::Vazia() const
 	return size == 0;
 }
 
+bool Lista::Cheia() const
+{
+	return size == max;
+}
+
