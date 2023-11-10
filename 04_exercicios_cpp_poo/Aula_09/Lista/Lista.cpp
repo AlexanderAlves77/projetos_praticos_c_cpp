@@ -24,3 +24,15 @@ bool Lista::Cheia() const
 	return size == max;
 }
 
+bool Lista::Adicionar(const Item& item)
+{
+	if (size < max)
+	{
+		itens[size++] = item;
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
