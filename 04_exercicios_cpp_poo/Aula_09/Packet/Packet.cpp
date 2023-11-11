@@ -29,3 +29,14 @@ void Packet::operator<<(short val)
 	case 3: data.part.w = val; break;
 	}
 }
+
+void Packet::operator>>(short& val) 
+{
+	switch (index++)
+	{
+	case 0: val = data.part.x; break;
+	case 1: val = data.part.y; break;
+	case 2: val = data.part.z; break;
+	case 3: val = data.part.w; break;
+	}
+}
