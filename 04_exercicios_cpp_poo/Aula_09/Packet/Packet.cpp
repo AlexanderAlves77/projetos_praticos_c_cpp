@@ -18,3 +18,14 @@ void Packet::end()
 {
     index = 0;
 }
+
+void Packet::operator<<(short val) 
+{
+	switch (index++)
+	{
+	case 0: data.part.x = val; break;
+	case 1: data.part.y = val; break;
+	case 2: data.part.z = val; break;
+	case 3: data.part.w = val; break;
+	}
+}
