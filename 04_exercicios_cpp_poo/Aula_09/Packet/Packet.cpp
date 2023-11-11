@@ -40,3 +40,8 @@ void Packet::operator>>(short& val)
 	case 3: val = data.part.w; break;
 	}
 }
+
+void Packet::send()
+{
+	cout << data.all << endl;
+}
