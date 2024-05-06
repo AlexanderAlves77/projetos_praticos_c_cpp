@@ -1,0 +1,8 @@
+// Arquivo    : PacMan
+// Author     : Alexander Alves
+// Criação    : 01 Jan 2013
+// Atualização: 14 Dez 2023
+// Descrição  : Nível 1 (Food)
+//
+// Informações de posição da comida
+// posX posY
