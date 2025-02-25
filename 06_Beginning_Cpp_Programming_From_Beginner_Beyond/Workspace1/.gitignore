@@ -1,5 +1,11 @@
-.codelite
-Makefile
-*.txt
-Debug
 *.mk
+*.project
+*.workspace
+build-Debug
+compile_commands.json
+Makefile
+# generated directories
+.codelite/
+
+*.session
+*.tags

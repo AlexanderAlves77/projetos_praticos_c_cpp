@@ -3,6 +3,6 @@ using namespace std;
 
 int main(int argc, char * argv[])
 {
-	cout << "Default Template" << endl;
+	cout << "Hello from Project 1" << endl;
 	return 0;
 }
