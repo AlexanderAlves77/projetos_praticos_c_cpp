@@ -1,4 +1,28 @@
 [{
+		"file":	"C:\\Users\\Alexander\\Downloads\\AECA\\node_sistemas\\projetos_praticos_c_cpp\\06_Beginning_Cpp_Programming_From_Beginner_Beyond\\Section4\\LinkerError\\main.cpp",
+		"directory":	"C:\\Users\\Alexander\\Downloads\\AECA\\node_sistemas\\projetos_praticos_c_cpp\\06_Beginning_Cpp_Programming_From_Beginner_Beyond\\Section4\\LinkerError",
+		"command":	"g++ -c C:\\Users\\Alexander\\Downloads\\AECA\\node_sistemas\\projetos_praticos_c_cpp\\06_Beginning_Cpp_Programming_From_Beginner_Beyond\\Section4\\LinkerError\\main.cpp -o C:\\Users\\Alexander\\Downloads\\AECA\\node_sistemas\\projetos_praticos_c_cpp\\06_Beginning_Cpp_Programming_From_Beginner_Beyond\\Section4\\LinkerError\\main.cpp.o -target x86_64-w64-mingw32 -I. -I.  -std=c++14  -Wall  -g  -O0  -std=c++14  -Wall"
+	}, {
+		"file":	"C:\\Users\\Alexander\\Downloads\\AECA\\node_sistemas\\projetos_praticos_c_cpp\\06_Beginning_Cpp_Programming_From_Beginner_Beyond\\Section4\\CompilerWarnings\\main.cpp",
+		"directory":	"C:\\Users\\Alexander\\Downloads\\AECA\\node_sistemas\\projetos_praticos_c_cpp\\06_Beginning_Cpp_Programming_From_Beginner_Beyond\\Section4\\CompilerWarnings",
+		"command":	"g++ -c C:\\Users\\Alexander\\Downloads\\AECA\\node_sistemas\\projetos_praticos_c_cpp\\06_Beginning_Cpp_Programming_From_Beginner_Beyond\\Section4\\CompilerWarnings\\main.cpp -o C:\\Users\\Alexander\\Downloads\\AECA\\node_sistemas\\projetos_praticos_c_cpp\\06_Beginning_Cpp_Programming_From_Beginner_Beyond\\Section4\\CompilerWarnings\\main.cpp.o -target x86_64-w64-mingw32 -I. -I.  -std=c++14  -Wall  -pedantic-errors  -g  -O0  -pedantic  -std=c++14  -Wall"
+	}, {
+		"file":	"C:\\Users\\Alexander\\Downloads\\AECA\\node_sistemas\\projetos_praticos_c_cpp\\06_Beginning_Cpp_Programming_From_Beginner_Beyond\\Section4\\Project2\\main.cpp",
+		"directory":	"C:\\Users\\Alexander\\Downloads\\AECA\\node_sistemas\\projetos_praticos_c_cpp\\06_Beginning_Cpp_Programming_From_Beginner_Beyond\\Section4\\Project2",
+		"command":	"g++ -c C:\\Users\\Alexander\\Downloads\\AECA\\node_sistemas\\projetos_praticos_c_cpp\\06_Beginning_Cpp_Programming_From_Beginner_Beyond\\Section4\\Project2\\main.cpp -o C:\\Users\\Alexander\\Downloads\\AECA\\node_sistemas\\projetos_praticos_c_cpp\\06_Beginning_Cpp_Programming_From_Beginner_Beyond\\Section4\\Project2\\main.cpp.o -target x86_64-w64-mingw32 -I. -I.  -std=c++14  -Wall  -g  -O0  -std=c++14  -Wall"
+	}, {
+		"file":	"C:\\Users\\Alexander\\Downloads\\AECA\\node_sistemas\\projetos_praticos_c_cpp\\06_Beginning_Cpp_Programming_From_Beginner_Beyond\\Section4\\ChallengeSolution\\main.cpp",
+		"directory":	"C:\\Users\\Alexander\\Downloads\\AECA\\node_sistemas\\projetos_praticos_c_cpp\\06_Beginning_Cpp_Programming_From_Beginner_Beyond\\Section4\\ChallengeSolution",
+		"command":	"g++ -c C:\\Users\\Alexander\\Downloads\\AECA\\node_sistemas\\projetos_praticos_c_cpp\\06_Beginning_Cpp_Programming_From_Beginner_Beyond\\Section4\\ChallengeSolution\\main.cpp -o C:\\Users\\Alexander\\Downloads\\AECA\\node_sistemas\\projetos_praticos_c_cpp\\06_Beginning_Cpp_Programming_From_Beginner_Beyond\\Section4\\ChallengeSolution\\main.cpp.o -target x86_64-w64-mingw32 -I. -I.  -std=c++14  -Wall  -g  -O0  -std=c++14  -Wall"
+	}, {
+		"file":	"C:\\Users\\Alexander\\Downloads\\AECA\\node_sistemas\\projetos_praticos_c_cpp\\06_Beginning_Cpp_Programming_From_Beginner_Beyond\\Section4\\FirstProgram\\main.cpp",
+		"directory":	"C:\\Users\\Alexander\\Downloads\\AECA\\node_sistemas\\projetos_praticos_c_cpp\\06_Beginning_Cpp_Programming_From_Beginner_Beyond\\Section4\\FirstProgram",
+		"command":	"g++ -c C:\\Users\\Alexander\\Downloads\\AECA\\node_sistemas\\projetos_praticos_c_cpp\\06_Beginning_Cpp_Programming_From_Beginner_Beyond\\Section4\\FirstProgram\\main.cpp -o C:\\Users\\Alexander\\Downloads\\AECA\\node_sistemas\\projetos_praticos_c_cpp\\06_Beginning_Cpp_Programming_From_Beginner_Beyond\\Section4\\FirstProgram\\main.cpp.o -target x86_64-w64-mingw32 -I. -I.  -std=c++14  -Wall  -g  -O0  -std=c++14  -Wall"
+	}, {
+		"file":	"C:\\Users\\Alexander\\Downloads\\AECA\\node_sistemas\\projetos_praticos_c_cpp\\06_Beginning_Cpp_Programming_From_Beginner_Beyond\\Section4\\CompilerErrors\\main.cpp",
+		"directory":	"C:\\Users\\Alexander\\Downloads\\AECA\\node_sistemas\\projetos_praticos_c_cpp\\06_Beginning_Cpp_Programming_From_Beginner_Beyond\\Section4\\CompilerErrors",
+		"command":	"g++ -c C:\\Users\\Alexander\\Downloads\\AECA\\node_sistemas\\projetos_praticos_c_cpp\\06_Beginning_Cpp_Programming_From_Beginner_Beyond\\Section4\\CompilerErrors\\main.cpp -o C:\\Users\\Alexander\\Downloads\\AECA\\node_sistemas\\projetos_praticos_c_cpp\\06_Beginning_Cpp_Programming_From_Beginner_Beyond\\Section4\\CompilerErrors\\main.cpp.o -target x86_64-w64-mingw32 -I. -I.  -std=c++14  -Wall  -g  -O0  -std=c++14  -Wall"
+	}, {
 		"file":	"C:\\Users\\Alexander\\Downloads\\AECA\\node_sistemas\\projetos_praticos_c_cpp\\06_Beginning_Cpp_Programming_From_Beginner_Beyond\\Section4\\Project1\\main.cpp",
 		"directory":	"C:\\Users\\Alexander\\Downloads\\AECA\\node_sistemas\\projetos_praticos_c_cpp\\06_Beginning_Cpp_Programming_From_Beginner_Beyond\\Section4\\Project1",
 		"command":	"g++ -c C:\\Users\\Alexander\\Downloads\\AECA\\node_sistemas\\projetos_praticos_c_cpp\\06_Beginning_Cpp_Programming_From_Beginner_Beyond\\Section4\\Project1\\main.cpp -o C:\\Users\\Alexander\\Downloads\\AECA\\node_sistemas\\projetos_praticos_c_cpp\\06_Beginning_Cpp_Programming_From_Beginner_Beyond\\Section4\\Project1\\main.cpp.o -target x86_64-w64-mingw32 -I. -I.  -std=c++14  -Wall  -g  -O0  -std=c++14  -Wall"
