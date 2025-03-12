@@ -37,6 +37,11 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("C:/Users/Alexander/Downloads/AECA/node_sistemas/projetos_praticos_c_cpp/05_Exercicios_Programacao_Games_C_Cpp/Lab30/LightYears/build/LightYears/cmake_install.cmake")
 endif()
 
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("C:/Users/Alexander/Downloads/AECA/node_sistemas/projetos_praticos_c_cpp/05_Exercicios_Programacao_Games_C_Cpp/Lab30/LightYears/build/_deps/sfml-build/cmake_install.cmake")
+endif()
+
 if(CMAKE_INSTALL_COMPONENT)
   if(CMAKE_INSTALL_COMPONENT MATCHES "^[a-zA-Z0-9_.+-]+$")
     set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")

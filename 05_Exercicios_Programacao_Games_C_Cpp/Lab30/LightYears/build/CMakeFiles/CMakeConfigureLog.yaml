@@ -646,3 +646,267 @@ events:
       Microsoft (R) Incremental Linker Version 14.43.34809.0
       Copyright (C) Microsoft Corporation.  All rights reserved.
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/mingw64/share/cmake-3.30/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "C:/Program Files/mingw64/share/cmake-3.30/Modules/CheckTypeSize.cmake:251 (check_include_file)"
+      - "build/_deps/sfml-src/cmake/Config.cmake:10 (check_type_size)"
+      - "build/_deps/sfml-src/CMakeLists.txt:48 (include)"
+    checks:
+      - "Looking for sys/types.h"
+    directories:
+      source: "C:/Users/Alexander/Downloads/AECA/node_sistemas/projetos_praticos_c_cpp/05_Exercicios_Programacao_Games_C_Cpp/Lab30/LightYears/build/CMakeFiles/CMakeScratch/TryCompile-rcngen"
+      binary: "C:/Users/Alexander/Downloads/AECA/node_sistemas/projetos_praticos_c_cpp/05_Exercicios_Programacao_Games_C_Cpp/Lab30/LightYears/build/CMakeFiles/CMakeScratch/TryCompile-rcngen"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_OSX_ARCHITECTURES: "x86_64"
+      CMAKE_OSX_SYSROOT: ""
+    buildResult:
+      variable: "HAVE_SYS_TYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Alexander/Downloads/AECA/node_sistemas/projetos_praticos_c_cpp/05_Exercicios_Programacao_Games_C_Cpp/Lab30/LightYears/build/CMakeFiles/CMakeScratch/TryCompile-rcngen'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_53fcd.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Vers├úo do MSBuild 17.13.19+0d9f5a35a para .NET Framework
+        Compila├º├úo de 12/03/2025 12:27:12 iniciada.
+        
+        Projeto "C:\\Users\\Alexander\\Downloads\\AECA\\node_sistemas\\projetos_praticos_c_cpp\\05_Exercicios_Programacao_Games_C_Cpp\\Lab30\\LightYears\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rcngen\\cmTC_53fcd.vcxproj" no n├│ 1 (destinos padr├úo).
+        PrepareForBuild:
+          Criando o diret├│rio "cmTC_53fcd.dir\\Debug\\".
+          A sa├¡da estruturada est├í habilitada. A formata├º├úo do diagn├│stico do compilador refletir├í a hierarquia de erros. Consulte https://aka.ms/cpp/structured-output para obter mais detalhes.
+          Criando o diret├│rio "C:\\Users\\Alexander\\Downloads\\AECA\\node_sistemas\\projetos_praticos_c_cpp\\05_Exercicios_Programacao_Games_C_Cpp\\Lab30\\LightYears\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rcngen\\Debug\\".
+          Criando o diret├│rio "cmTC_53fcd.dir\\Debug\\cmTC_53fcd.tlog\\".
+        InitializeBuildStatus:
+          Criando "cmTC_53fcd.dir\\Debug\\cmTC_53fcd.tlog\\unsuccessfulbuild" porque "AlwaysCreate" foi especificado.
+          Tocando "cmTC_53fcd.dir\\Debug\\cmTC_53fcd.tlog\\unsuccessfulbuild".
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Debug"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_53fcd.dir\\Debug\\\\" /Fd"cmTC_53fcd.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\Alexander\\Downloads\\AECA\\node_sistemas\\projetos_praticos_c_cpp\\05_Exercicios_Programacao_Games_C_Cpp\\Lab30\\LightYears\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rcngen\\CheckIncludeFile.c"
+          Microsoft (R) C/C++ Optimizing Compiler Vers├úo 19.43.34809 para x64
+          Copyright (C) Microsoft Corporation. Todos os direitos reservados.
+          cl /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_53fcd.dir\\Debug\\\\" /Fd"cmTC_53fcd.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\Alexander\\Downloads\\AECA\\node_sistemas\\projetos_praticos_c_cpp\\05_Exercicios_Programacao_Games_C_Cpp\\Lab30\\LightYears\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rcngen\\CheckIncludeFile.c"
+          CheckIncludeFile.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Alexander\\Downloads\\AECA\\node_sistemas\\projetos_praticos_c_cpp\\05_Exercicios_Programacao_Games_C_Cpp\\Lab30\\LightYears\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rcngen\\Debug\\cmTC_53fcd.exe" /INCREMENTAL /ILK:"cmTC_53fcd.dir\\Debug\\cmTC_53fcd.ilk" /NOLOGO /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Alexander/Downloads/AECA/node_sistemas/projetos_praticos_c_cpp/05_Exercicios_Programacao_Games_C_Cpp/Lab30/LightYears/build/CMakeFiles/CMakeScratch/TryCompile-rcngen/Debug/cmTC_53fcd.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Alexander/Downloads/AECA/node_sistemas/projetos_praticos_c_cpp/05_Exercicios_Programacao_Games_C_Cpp/Lab30/LightYears/build/CMakeFiles/CMakeScratch/TryCompile-rcngen/Debug/cmTC_53fcd.lib" /MACHINE:X64  /machine:x64 cmTC_53fcd.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_53fcd.vcxproj -> C:\\Users\\Alexander\\Downloads\\AECA\\node_sistemas\\projetos_praticos_c_cpp\\05_Exercicios_Programacao_Games_C_Cpp\\Lab30\\LightYears\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rcngen\\Debug\\cmTC_53fcd.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Alexander\\Downloads\\AECA\\node_sistemas\\projetos_praticos_c_cpp\\05_Exercicios_Programacao_Games_C_Cpp\\Lab30\\LightYears\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rcngen\\Debug\\cmTC_53fcd.exe" "C:\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_53fcd.dir\\Debug\\cmTC_53fcd.tlog\\cmTC_53fcd.write.1u.tlog" "cmTC_53fcd.dir\\Debug\\vcpkg.applocal.log"
+          'pwsh.exe' n├úo ├® reconhecido como um comando interno
+          ou externo, um programa oper├ível ou um arquivo em lotes.
+          O comando "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Alexander\\Downloads\\AECA\\node_sistemas\\projetos_praticos_c_cpp\\05_Exercicios_Programacao_Games_C_Cpp\\Lab30\\LightYears\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rcngen\\Debug\\cmTC_53fcd.exe" "C:\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_53fcd.dir\\Debug\\cmTC_53fcd.tlog\\cmTC_53fcd.write.1u.tlog" "cmTC_53fcd.dir\\Debug\\vcpkg.applocal.log"" foi encerrado com o c├│digo 9009.
+          "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Alexander\\Downloads\\AECA\\node_sistemas\\projetos_praticos_c_cpp\\05_Exercicios_Programacao_Games_C_Cpp\\Lab30\\LightYears\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rcngen\\Debug\\cmTC_53fcd.exe" "C:\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_53fcd.dir\\Debug\\cmTC_53fcd.tlog\\cmTC_53fcd.write.1u.tlog" "cmTC_53fcd.dir\\Debug\\vcpkg.applocal.log"
+        FinalizeBuildStatus:
+          Excluindo o arquivo "cmTC_53fcd.dir\\Debug\\cmTC_53fcd.tlog\\unsuccessfulbuild".
+          Tocando "cmTC_53fcd.dir\\Debug\\cmTC_53fcd.tlog\\cmTC_53fcd.lastbuildstate".
+        Projeto de compila├º├úo pronto "C:\\Users\\Alexander\\Downloads\\AECA\\node_sistemas\\projetos_praticos_c_cpp\\05_Exercicios_Programacao_Games_C_Cpp\\Lab30\\LightYears\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rcngen\\cmTC_53fcd.vcxproj" (destinos padr├úo).
+        
+        Compila├º├úo com ├¬xito.
+            0 Aviso(s)
+            0 Erro(s)
+        
+        Tempo Decorrido 00:00:02.14
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/mingw64/share/cmake-3.30/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "C:/Program Files/mingw64/share/cmake-3.30/Modules/CheckTypeSize.cmake:252 (check_include_file)"
+      - "build/_deps/sfml-src/cmake/Config.cmake:10 (check_type_size)"
+      - "build/_deps/sfml-src/CMakeLists.txt:48 (include)"
+    checks:
+      - "Looking for stdint.h"
+    directories:
+      source: "C:/Users/Alexander/Downloads/AECA/node_sistemas/projetos_praticos_c_cpp/05_Exercicios_Programacao_Games_C_Cpp/Lab30/LightYears/build/CMakeFiles/CMakeScratch/TryCompile-jmnlsq"
+      binary: "C:/Users/Alexander/Downloads/AECA/node_sistemas/projetos_praticos_c_cpp/05_Exercicios_Programacao_Games_C_Cpp/Lab30/LightYears/build/CMakeFiles/CMakeScratch/TryCompile-jmnlsq"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_OSX_ARCHITECTURES: "x86_64"
+      CMAKE_OSX_SYSROOT: ""
+    buildResult:
+      variable: "HAVE_STDINT_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Alexander/Downloads/AECA/node_sistemas/projetos_praticos_c_cpp/05_Exercicios_Programacao_Games_C_Cpp/Lab30/LightYears/build/CMakeFiles/CMakeScratch/TryCompile-jmnlsq'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_8fdd5.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Vers├úo do MSBuild 17.13.19+0d9f5a35a para .NET Framework
+        Compila├º├úo de 12/03/2025 12:27:14 iniciada.
+        
+        Projeto "C:\\Users\\Alexander\\Downloads\\AECA\\node_sistemas\\projetos_praticos_c_cpp\\05_Exercicios_Programacao_Games_C_Cpp\\Lab30\\LightYears\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jmnlsq\\cmTC_8fdd5.vcxproj" no n├│ 1 (destinos padr├úo).
+        PrepareForBuild:
+          Criando o diret├│rio "cmTC_8fdd5.dir\\Debug\\".
+          A sa├¡da estruturada est├í habilitada. A formata├º├úo do diagn├│stico do compilador refletir├í a hierarquia de erros. Consulte https://aka.ms/cpp/structured-output para obter mais detalhes.
+          Criando o diret├│rio "C:\\Users\\Alexander\\Downloads\\AECA\\node_sistemas\\projetos_praticos_c_cpp\\05_Exercicios_Programacao_Games_C_Cpp\\Lab30\\LightYears\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jmnlsq\\Debug\\".
+          Criando o diret├│rio "cmTC_8fdd5.dir\\Debug\\cmTC_8fdd5.tlog\\".
+        InitializeBuildStatus:
+          Criando "cmTC_8fdd5.dir\\Debug\\cmTC_8fdd5.tlog\\unsuccessfulbuild" porque "AlwaysCreate" foi especificado.
+          Tocando "cmTC_8fdd5.dir\\Debug\\cmTC_8fdd5.tlog\\unsuccessfulbuild".
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Debug"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_8fdd5.dir\\Debug\\\\" /Fd"cmTC_8fdd5.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\Alexander\\Downloads\\AECA\\node_sistemas\\projetos_praticos_c_cpp\\05_Exercicios_Programacao_Games_C_Cpp\\Lab30\\LightYears\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jmnlsq\\CheckIncludeFile.c"
+          Microsoft (R) C/C++ Optimizing Compiler Vers├úo 19.43.34809 para x64
+          Copyright (C) Microsoft Corporation. Todos os direitos reservados.
+          cl /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_8fdd5.dir\\Debug\\\\" /Fd"cmTC_8fdd5.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\Alexander\\Downloads\\AECA\\node_sistemas\\projetos_praticos_c_cpp\\05_Exercicios_Programacao_Games_C_Cpp\\Lab30\\LightYears\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jmnlsq\\CheckIncludeFile.c"
+          CheckIncludeFile.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Alexander\\Downloads\\AECA\\node_sistemas\\projetos_praticos_c_cpp\\05_Exercicios_Programacao_Games_C_Cpp\\Lab30\\LightYears\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jmnlsq\\Debug\\cmTC_8fdd5.exe" /INCREMENTAL /ILK:"cmTC_8fdd5.dir\\Debug\\cmTC_8fdd5.ilk" /NOLOGO /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Alexander/Downloads/AECA/node_sistemas/projetos_praticos_c_cpp/05_Exercicios_Programacao_Games_C_Cpp/Lab30/LightYears/build/CMakeFiles/CMakeScratch/TryCompile-jmnlsq/Debug/cmTC_8fdd5.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Alexander/Downloads/AECA/node_sistemas/projetos_praticos_c_cpp/05_Exercicios_Programacao_Games_C_Cpp/Lab30/LightYears/build/CMakeFiles/CMakeScratch/TryCompile-jmnlsq/Debug/cmTC_8fdd5.lib" /MACHINE:X64  /machine:x64 cmTC_8fdd5.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_8fdd5.vcxproj -> C:\\Users\\Alexander\\Downloads\\AECA\\node_sistemas\\projetos_praticos_c_cpp\\05_Exercicios_Programacao_Games_C_Cpp\\Lab30\\LightYears\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jmnlsq\\Debug\\cmTC_8fdd5.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Alexander\\Downloads\\AECA\\node_sistemas\\projetos_praticos_c_cpp\\05_Exercicios_Programacao_Games_C_Cpp\\Lab30\\LightYears\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jmnlsq\\Debug\\cmTC_8fdd5.exe" "C:\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_8fdd5.dir\\Debug\\cmTC_8fdd5.tlog\\cmTC_8fdd5.write.1u.tlog" "cmTC_8fdd5.dir\\Debug\\vcpkg.applocal.log"
+          'pwsh.exe' n├úo ├® reconhecido como um comando interno
+          ou externo, um programa oper├ível ou um arquivo em lotes.
+          O comando "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Alexander\\Downloads\\AECA\\node_sistemas\\projetos_praticos_c_cpp\\05_Exercicios_Programacao_Games_C_Cpp\\Lab30\\LightYears\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jmnlsq\\Debug\\cmTC_8fdd5.exe" "C:\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_8fdd5.dir\\Debug\\cmTC_8fdd5.tlog\\cmTC_8fdd5.write.1u.tlog" "cmTC_8fdd5.dir\\Debug\\vcpkg.applocal.log"" foi encerrado com o c├│digo 9009.
+          "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Alexander\\Downloads\\AECA\\node_sistemas\\projetos_praticos_c_cpp\\05_Exercicios_Programacao_Games_C_Cpp\\Lab30\\LightYears\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jmnlsq\\Debug\\cmTC_8fdd5.exe" "C:\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_8fdd5.dir\\Debug\\cmTC_8fdd5.tlog\\cmTC_8fdd5.write.1u.tlog" "cmTC_8fdd5.dir\\Debug\\vcpkg.applocal.log"
+        FinalizeBuildStatus:
+          Excluindo o arquivo "cmTC_8fdd5.dir\\Debug\\cmTC_8fdd5.tlog\\unsuccessfulbuild".
+          Tocando "cmTC_8fdd5.dir\\Debug\\cmTC_8fdd5.tlog\\cmTC_8fdd5.lastbuildstate".
+        Projeto de compila├º├úo pronto "C:\\Users\\Alexander\\Downloads\\AECA\\node_sistemas\\projetos_praticos_c_cpp\\05_Exercicios_Programacao_Games_C_Cpp\\Lab30\\LightYears\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jmnlsq\\cmTC_8fdd5.vcxproj" (destinos padr├úo).
+        
+        Compila├º├úo com ├¬xito.
+            0 Aviso(s)
+            0 Erro(s)
+        
+        Tempo Decorrido 00:00:02.08
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/mingw64/share/cmake-3.30/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "C:/Program Files/mingw64/share/cmake-3.30/Modules/CheckTypeSize.cmake:253 (check_include_file)"
+      - "build/_deps/sfml-src/cmake/Config.cmake:10 (check_type_size)"
+      - "build/_deps/sfml-src/CMakeLists.txt:48 (include)"
+    checks:
+      - "Looking for stddef.h"
+    directories:
+      source: "C:/Users/Alexander/Downloads/AECA/node_sistemas/projetos_praticos_c_cpp/05_Exercicios_Programacao_Games_C_Cpp/Lab30/LightYears/build/CMakeFiles/CMakeScratch/TryCompile-g2oamw"
+      binary: "C:/Users/Alexander/Downloads/AECA/node_sistemas/projetos_praticos_c_cpp/05_Exercicios_Programacao_Games_C_Cpp/Lab30/LightYears/build/CMakeFiles/CMakeScratch/TryCompile-g2oamw"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_OSX_ARCHITECTURES: "x86_64"
+      CMAKE_OSX_SYSROOT: ""
+    buildResult:
+      variable: "HAVE_STDDEF_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Alexander/Downloads/AECA/node_sistemas/projetos_praticos_c_cpp/05_Exercicios_Programacao_Games_C_Cpp/Lab30/LightYears/build/CMakeFiles/CMakeScratch/TryCompile-g2oamw'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_a5c10.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Vers├úo do MSBuild 17.13.19+0d9f5a35a para .NET Framework
+        Compila├º├úo de 12/03/2025 12:27:17 iniciada.
+        
+        Projeto "C:\\Users\\Alexander\\Downloads\\AECA\\node_sistemas\\projetos_praticos_c_cpp\\05_Exercicios_Programacao_Games_C_Cpp\\Lab30\\LightYears\\build\\CMakeFiles\\CMakeScratch\\TryCompile-g2oamw\\cmTC_a5c10.vcxproj" no n├│ 1 (destinos padr├úo).
+        PrepareForBuild:
+          Criando o diret├│rio "cmTC_a5c10.dir\\Debug\\".
+          A sa├¡da estruturada est├í habilitada. A formata├º├úo do diagn├│stico do compilador refletir├í a hierarquia de erros. Consulte https://aka.ms/cpp/structured-output para obter mais detalhes.
+          Criando o diret├│rio "C:\\Users\\Alexander\\Downloads\\AECA\\node_sistemas\\projetos_praticos_c_cpp\\05_Exercicios_Programacao_Games_C_Cpp\\Lab30\\LightYears\\build\\CMakeFiles\\CMakeScratch\\TryCompile-g2oamw\\Debug\\".
+          Criando o diret├│rio "cmTC_a5c10.dir\\Debug\\cmTC_a5c10.tlog\\".
+        InitializeBuildStatus:
+          Criando "cmTC_a5c10.dir\\Debug\\cmTC_a5c10.tlog\\unsuccessfulbuild" porque "AlwaysCreate" foi especificado.
+          Tocando "cmTC_a5c10.dir\\Debug\\cmTC_a5c10.tlog\\unsuccessfulbuild".
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Debug"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a5c10.dir\\Debug\\\\" /Fd"cmTC_a5c10.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\Alexander\\Downloads\\AECA\\node_sistemas\\projetos_praticos_c_cpp\\05_Exercicios_Programacao_Games_C_Cpp\\Lab30\\LightYears\\build\\CMakeFiles\\CMakeScratch\\TryCompile-g2oamw\\CheckIncludeFile.c"
+          Microsoft (R) C/C++ Optimizing Compiler Vers├úo 19.43.34809 para x64
+          Copyright (C) Microsoft Corporation. Todos os direitos reservados.
+          cl /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a5c10.dir\\Debug\\\\" /Fd"cmTC_a5c10.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\Alexander\\Downloads\\AECA\\node_sistemas\\projetos_praticos_c_cpp\\05_Exercicios_Programacao_Games_C_Cpp\\Lab30\\LightYears\\build\\CMakeFiles\\CMakeScratch\\TryCompile-g2oamw\\CheckIncludeFile.c"
+          CheckIncludeFile.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Alexander\\Downloads\\AECA\\node_sistemas\\projetos_praticos_c_cpp\\05_Exercicios_Programacao_Games_C_Cpp\\Lab30\\LightYears\\build\\CMakeFiles\\CMakeScratch\\TryCompile-g2oamw\\Debug\\cmTC_a5c10.exe" /INCREMENTAL /ILK:"cmTC_a5c10.dir\\Debug\\cmTC_a5c10.ilk" /NOLOGO /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Alexander/Downloads/AECA/node_sistemas/projetos_praticos_c_cpp/05_Exercicios_Programacao_Games_C_Cpp/Lab30/LightYears/build/CMakeFiles/CMakeScratch/TryCompile-g2oamw/Debug/cmTC_a5c10.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Alexander/Downloads/AECA/node_sistemas/projetos_praticos_c_cpp/05_Exercicios_Programacao_Games_C_Cpp/Lab30/LightYears/build/CMakeFiles/CMakeScratch/TryCompile-g2oamw/Debug/cmTC_a5c10.lib" /MACHINE:X64  /machine:x64 cmTC_a5c10.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_a5c10.vcxproj -> C:\\Users\\Alexander\\Downloads\\AECA\\node_sistemas\\projetos_praticos_c_cpp\\05_Exercicios_Programacao_Games_C_Cpp\\Lab30\\LightYears\\build\\CMakeFiles\\CMakeScratch\\TryCompile-g2oamw\\Debug\\cmTC_a5c10.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Alexander\\Downloads\\AECA\\node_sistemas\\projetos_praticos_c_cpp\\05_Exercicios_Programacao_Games_C_Cpp\\Lab30\\LightYears\\build\\CMakeFiles\\CMakeScratch\\TryCompile-g2oamw\\Debug\\cmTC_a5c10.exe" "C:\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_a5c10.dir\\Debug\\cmTC_a5c10.tlog\\cmTC_a5c10.write.1u.tlog" "cmTC_a5c10.dir\\Debug\\vcpkg.applocal.log"
+          'pwsh.exe' n├úo ├® reconhecido como um comando interno
+          ou externo, um programa oper├ível ou um arquivo em lotes.
+          O comando "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Alexander\\Downloads\\AECA\\node_sistemas\\projetos_praticos_c_cpp\\05_Exercicios_Programacao_Games_C_Cpp\\Lab30\\LightYears\\build\\CMakeFiles\\CMakeScratch\\TryCompile-g2oamw\\Debug\\cmTC_a5c10.exe" "C:\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_a5c10.dir\\Debug\\cmTC_a5c10.tlog\\cmTC_a5c10.write.1u.tlog" "cmTC_a5c10.dir\\Debug\\vcpkg.applocal.log"" foi encerrado com o c├│digo 9009.
+          "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Alexander\\Downloads\\AECA\\node_sistemas\\projetos_praticos_c_cpp\\05_Exercicios_Programacao_Games_C_Cpp\\Lab30\\LightYears\\build\\CMakeFiles\\CMakeScratch\\TryCompile-g2oamw\\Debug\\cmTC_a5c10.exe" "C:\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_a5c10.dir\\Debug\\cmTC_a5c10.tlog\\cmTC_a5c10.write.1u.tlog" "cmTC_a5c10.dir\\Debug\\vcpkg.applocal.log"
+        FinalizeBuildStatus:
+          Excluindo o arquivo "cmTC_a5c10.dir\\Debug\\cmTC_a5c10.tlog\\unsuccessfulbuild".
+          Tocando "cmTC_a5c10.dir\\Debug\\cmTC_a5c10.tlog\\cmTC_a5c10.lastbuildstate".
+        Projeto de compila├º├úo pronto "C:\\Users\\Alexander\\Downloads\\AECA\\node_sistemas\\projetos_praticos_c_cpp\\05_Exercicios_Programacao_Games_C_Cpp\\Lab30\\LightYears\\build\\CMakeFiles\\CMakeScratch\\TryCompile-g2oamw\\cmTC_a5c10.vcxproj" (destinos padr├úo).
+        
+        Compila├º├úo com ├¬xito.
+            0 Aviso(s)
+            0 Erro(s)
+        
+        Tempo Decorrido 00:00:02.05
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/mingw64/share/cmake-3.30/Modules/CheckTypeSize.cmake:147 (try_compile)"
+      - "C:/Program Files/mingw64/share/cmake-3.30/Modules/CheckTypeSize.cmake:272 (__check_type_size_impl)"
+      - "build/_deps/sfml-src/cmake/Config.cmake:10 (check_type_size)"
+      - "build/_deps/sfml-src/CMakeLists.txt:48 (include)"
+    checks:
+      - "Check size of void*"
+    directories:
+      source: "C:/Users/Alexander/Downloads/AECA/node_sistemas/projetos_praticos_c_cpp/05_Exercicios_Programacao_Games_C_Cpp/Lab30/LightYears/build/CMakeFiles/CMakeScratch/TryCompile-075yzh"
+      binary: "C:/Users/Alexander/Downloads/AECA/node_sistemas/projetos_praticos_c_cpp/05_Exercicios_Programacao_Games_C_Cpp/Lab30/LightYears/build/CMakeFiles/CMakeScratch/TryCompile-075yzh"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_OSX_ARCHITECTURES: "x86_64"
+      CMAKE_OSX_SYSROOT: ""
+    buildResult:
+      variable: "HAVE_SIZEOF_VOID_PTR"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Alexander/Downloads/AECA/node_sistemas/projetos_praticos_c_cpp/05_Exercicios_Programacao_Games_C_Cpp/Lab30/LightYears/build/CMakeFiles/CMakeScratch/TryCompile-075yzh'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_1ff80.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Vers├úo do MSBuild 17.13.19+0d9f5a35a para .NET Framework
+        Compila├º├úo de 12/03/2025 12:27:19 iniciada.
+        
+        Projeto "C:\\Users\\Alexander\\Downloads\\AECA\\node_sistemas\\projetos_praticos_c_cpp\\05_Exercicios_Programacao_Games_C_Cpp\\Lab30\\LightYears\\build\\CMakeFiles\\CMakeScratch\\TryCompile-075yzh\\cmTC_1ff80.vcxproj" no n├│ 1 (destinos padr├úo).
+        PrepareForBuild:
+          Criando o diret├│rio "cmTC_1ff80.dir\\Debug\\".
+          A sa├¡da estruturada est├í habilitada. A formata├º├úo do diagn├│stico do compilador refletir├í a hierarquia de erros. Consulte https://aka.ms/cpp/structured-output para obter mais detalhes.
+          Criando o diret├│rio "C:\\Users\\Alexander\\Downloads\\AECA\\node_sistemas\\projetos_praticos_c_cpp\\05_Exercicios_Programacao_Games_C_Cpp\\Lab30\\LightYears\\build\\CMakeFiles\\CMakeScratch\\TryCompile-075yzh\\Debug\\".
+          Criando o diret├│rio "cmTC_1ff80.dir\\Debug\\cmTC_1ff80.tlog\\".
+        InitializeBuildStatus:
+          Criando "cmTC_1ff80.dir\\Debug\\cmTC_1ff80.tlog\\unsuccessfulbuild" porque "AlwaysCreate" foi especificado.
+          Tocando "cmTC_1ff80.dir\\Debug\\cmTC_1ff80.tlog\\unsuccessfulbuild".
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Debug"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1ff80.dir\\Debug\\\\" /Fd"cmTC_1ff80.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\Alexander\\Downloads\\AECA\\node_sistemas\\projetos_praticos_c_cpp\\05_Exercicios_Programacao_Games_C_Cpp\\Lab30\\LightYears\\build\\CMakeFiles\\CMakeScratch\\TryCompile-075yzh\\SIZEOF_VOID_PTR.c"
+          Microsoft (R) C/C++ Optimizing Compiler Vers├úo 19.43.34809 para x64
+          Copyright (C) Microsoft Corporation. Todos os direitos reservados.
+          cl /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1ff80.dir\\Debug\\\\" /Fd"cmTC_1ff80.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\Alexander\\Downloads\\AECA\\node_sistemas\\projetos_praticos_c_cpp\\05_Exercicios_Programacao_Games_C_Cpp\\Lab30\\LightYears\\build\\CMakeFiles\\CMakeScratch\\TryCompile-075yzh\\SIZEOF_VOID_PTR.c"
+          SIZEOF_VOID_PTR.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Alexander\\Downloads\\AECA\\node_sistemas\\projetos_praticos_c_cpp\\05_Exercicios_Programacao_Games_C_Cpp\\Lab30\\LightYears\\build\\CMakeFiles\\CMakeScratch\\TryCompile-075yzh\\Debug\\cmTC_1ff80.exe" /INCREMENTAL /ILK:"cmTC_1ff80.dir\\Debug\\cmTC_1ff80.ilk" /NOLOGO /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Alexander/Downloads/AECA/node_sistemas/projetos_praticos_c_cpp/05_Exercicios_Programacao_Games_C_Cpp/Lab30/LightYears/build/CMakeFiles/CMakeScratch/TryCompile-075yzh/Debug/cmTC_1ff80.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Alexander/Downloads/AECA/node_sistemas/projetos_praticos_c_cpp/05_Exercicios_Programacao_Games_C_Cpp/Lab30/LightYears/build/CMakeFiles/CMakeScratch/TryCompile-075yzh/Debug/cmTC_1ff80.lib" /MACHINE:X64  /machine:x64 cmTC_1ff80.dir\\Debug\\SIZEOF_VOID_PTR.obj
+          cmTC_1ff80.vcxproj -> C:\\Users\\Alexander\\Downloads\\AECA\\node_sistemas\\projetos_praticos_c_cpp\\05_Exercicios_Programacao_Games_C_Cpp\\Lab30\\LightYears\\build\\CMakeFiles\\CMakeScratch\\TryCompile-075yzh\\Debug\\cmTC_1ff80.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Alexander\\Downloads\\AECA\\node_sistemas\\projetos_praticos_c_cpp\\05_Exercicios_Programacao_Games_C_Cpp\\Lab30\\LightYears\\build\\CMakeFiles\\CMakeScratch\\TryCompile-075yzh\\Debug\\cmTC_1ff80.exe" "C:\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_1ff80.dir\\Debug\\cmTC_1ff80.tlog\\cmTC_1ff80.write.1u.tlog" "cmTC_1ff80.dir\\Debug\\vcpkg.applocal.log"
+          'pwsh.exe' n├úo ├® reconhecido como um comando interno
+          ou externo, um programa oper├ível ou um arquivo em lotes.
+          O comando "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Alexander\\Downloads\\AECA\\node_sistemas\\projetos_praticos_c_cpp\\05_Exercicios_Programacao_Games_C_Cpp\\Lab30\\LightYears\\build\\CMakeFiles\\CMakeScratch\\TryCompile-075yzh\\Debug\\cmTC_1ff80.exe" "C:\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_1ff80.dir\\Debug\\cmTC_1ff80.tlog\\cmTC_1ff80.write.1u.tlog" "cmTC_1ff80.dir\\Debug\\vcpkg.applocal.log"" foi encerrado com o c├│digo 9009.
+          "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Alexander\\Downloads\\AECA\\node_sistemas\\projetos_praticos_c_cpp\\05_Exercicios_Programacao_Games_C_Cpp\\Lab30\\LightYears\\build\\CMakeFiles\\CMakeScratch\\TryCompile-075yzh\\Debug\\cmTC_1ff80.exe" "C:\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_1ff80.dir\\Debug\\cmTC_1ff80.tlog\\cmTC_1ff80.write.1u.tlog" "cmTC_1ff80.dir\\Debug\\vcpkg.applocal.log"
+        FinalizeBuildStatus:
+          Excluindo o arquivo "cmTC_1ff80.dir\\Debug\\cmTC_1ff80.tlog\\unsuccessfulbuild".
+          Tocando "cmTC_1ff80.dir\\Debug\\cmTC_1ff80.tlog\\cmTC_1ff80.lastbuildstate".
+        Projeto de compila├º├úo pronto "C:\\Users\\Alexander\\Downloads\\AECA\\node_sistemas\\projetos_praticos_c_cpp\\05_Exercicios_Programacao_Games_C_Cpp\\Lab30\\LightYears\\build\\CMakeFiles\\CMakeScratch\\TryCompile-075yzh\\cmTC_1ff80.vcxproj" (destinos padr├úo).
+        
+        Compila├º├úo com ├¬xito.
+            0 Aviso(s)
+            0 Erro(s)
+        
+        Tempo Decorrido 00:00:02.12
+        
+      exitCode: 0
+...
