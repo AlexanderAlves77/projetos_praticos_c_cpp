@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.30.4)
+cmake_minimum_required(VERSION 3.27.7)
 
 # The default build type must be set before project()
 #if(CMAKE_SOURCE_DIR STREQUAL CMAKE_CURRENT_SOURCE_DIR AND NOT CMAKE_BUILD_TYPE AND NOT CMAKE_CONFIGURATION_TYPES)
@@ -12,7 +12,8 @@ set(CMAKE_CXX_STANDARD          14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS       OFF)
 
+add_executable(LightYearsGame
+	${CMAKE_CURRENT_SOURCE_DIR}/LightYears/src/main.cpp
+)
 
-# list(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/tools/cmake/include)
 
-# include(BoostRoot)
