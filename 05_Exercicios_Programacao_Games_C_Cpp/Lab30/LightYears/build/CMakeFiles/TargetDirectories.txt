@@ -1,3 +1,3 @@
-C:/Users/Alexander/Downloads/AECA/node_sistemas/projetos_praticos_c_cpp/05_Exercicios_Programacao_Games_C_Cpp/Lab30/LightYears/build/CMakeFiles/LightYearsGame.dir
 C:/Users/Alexander/Downloads/AECA/node_sistemas/projetos_praticos_c_cpp/05_Exercicios_Programacao_Games_C_Cpp/Lab30/LightYears/build/CMakeFiles/ALL_BUILD.dir
 C:/Users/Alexander/Downloads/AECA/node_sistemas/projetos_praticos_c_cpp/05_Exercicios_Programacao_Games_C_Cpp/Lab30/LightYears/build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/Alexander/Downloads/AECA/node_sistemas/projetos_praticos_c_cpp/05_Exercicios_Programacao_Games_C_Cpp/Lab30/LightYears/build/LightYears/CMakeFiles/LightYearsGame.dir
