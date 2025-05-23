@@ -1,0 +1,43 @@
+/**********************************************************************************
+* Arquivo    : WaveM (Arquivo de Cabeçalho)
+* Author     : Alexander Alves
+* Criação    : 06 Ago 2019
+* Atualização: 21 Dez 2023
+* Compilador : Visual C++ 2019
+*
+* Descrição  : Cria uma onda de inimigos Magenta
+*
+**********************************************************************************/
+
+#ifndef _GEOWARS_WAVEM_H_
+#define _GEOWARS_WAVEM_H_
+
+// --------------------------------------------------------------------------------
+
+#include "Object.h"
+#include "Timer.h"
+#include "Random.h"
+
+// --------------------------------------------------------------------------------
+
+class WaveM : public Object
+{
+private:
+    float pX, pY;       // posição dos inimigos 
+    RandF posX;         // valor aleatório para posição X
+    RandF posY;         // valor aleatório para posição Y
+    RandF secs;         // valor aleatório de segundos
+    Timer timer;        // medidor de tempo
+    float delay;        // atraso para a próxima onda
+
+public:
+    WaveM();            // construtor
+    ~WaveM();           // destrutor
+
+    void Update();      // atualização
+    void Draw();        // desenho
+};
+
+// ------------------------------------------------------------------------------
+
+#endif
