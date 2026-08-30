@@ -31,6 +31,13 @@ O projeto pretende adotar versionamento formal quando sua maturidade justificar 
 * Adicionado `CONTRIBUTING.md`;
 * Adicionado `CHANGELOG.md`.
 
+- Added the initial C++ project;
+- Added the first `main.cpp`;
+- Added the first executable console application;
+- Configured the project for C++20;
+- Configured the initial x64 development target.
+
+
 ---
 
 ## Tipos de mudanças
