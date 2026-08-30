@@ -22,18 +22,18 @@ O desenvolvimento seguirá uma arquitetura evolutiva: sistemas serão introduzid
 
 🟡 **Status: Em desenvolvimento**
 
-* ⬜ Criar estrutura inicial do projeto;
-* ⬜ Configurar Visual Studio Community 2022;
-* ⬜ Definir C++20;
-* ⬜ Configurar Windows x64;
-* ⬜ Criar primeiro `main.cpp`;
-* ⬜ Validar Debug;
-* ⬜ Validar Release;
-* ⬜ Inicializar histórico Git;
-* ⬜ Criar README;
-* ⬜ Criar CHANGELOG;
-* ⬜ Criar ROADMAP;
-* ⬜ Criar CONTRIBUTING.
+- ✅ Criar estrutura inicial do projeto;
+- ✅ Configurar Visual Studio Community 2022;
+- ✅ Definir C++20;
+- ✅ Configurar Windows x64;
+- ✅ Criar primeiro `main.cpp`;
+- ✅ Validar Debug;
+- ⬜ Validar Release;
+- ✅ Inicializar histórico Git;
+- ✅ Criar README;
+- ✅ Criar CHANGELOG;
+- ✅ Criar ROADMAP;
+- ✅ Criar CONTRIBUTING.
 
 ---
 
