@@ -1,0 +1,64 @@
+# ====================================================================
+# Compilação e Binários (Arquivos gerados pelo compilador)
+# ====================================================================
+# Executáveis principais
+*.exe
+*.out
+*.app
+
+# Arquivos de objetos e bibliotecas compiladas
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dll
+*.dylib
+
+# ====================================================================
+# Ferramentas de Build (CMake, Make, Ninja)
+# ====================================================================
+# Diretórios comuns de build (convenção)
+[Bb]uild/
+[Dd]ist/
+
+# Arquivos locais do CMake
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+
+# ====================================================================
+# IDEs e Editores de Código
+# ====================================================================
+# Visual Studio Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+# Visual Studio (MSVC)
+.vs/
+*.user
+*.suo
+*.sln
+*.vcxproj
+*.filters
+
+# CLion (JetBrains)
+.idea/
+cmake-build-*/
+
+# Xcode
+*.xcodeproj/
+*.xcworkspace/
+
+# ====================================================================
+# Outros Arquivos Temporários
+# ====================================================================
+*.log
+*.tmp
+.DS_Store
