@@ -37,6 +37,10 @@ O projeto pretende adotar versionamento formal quando sua maturidade justificar 
 - Configured the project for C++20;
 - Configured the initial x64 development target.
 
+- Added initial player state variables for health, coins, and level.
+- Added state updates during program execution.
+- Added console output for initial and current player state.
+
 
 ---
 
