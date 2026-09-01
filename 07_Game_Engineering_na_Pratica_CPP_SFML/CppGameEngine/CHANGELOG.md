@@ -67,6 +67,12 @@ O projeto pretende adotar versionamento formal quando sua maturidade justificar 
 - Added conditional item purchase validation.
 - Added safe execution example for potentially invalid operations.
 
+- Added alternative decision paths using `if` and `else`.
+- Added purchase feedback for successful and insufficient coin scenarios.
+- Added missing coin calculation for failed purchases.
+- Added experience requirement feedback for both decision outcomes.
+- Added boundary scenario validation for conditional rules.
+
 
 ---
 
