@@ -1,32 +1,80 @@
 #include <iostream>
 
+enum class GameState
+{
+	Menu,
+	Playing,
+	GameOver
+};
+
 int main()
 {
-    const int TOTAL_DAYS = 5;
-    const int RESOURCES_PER_DAY = 3;
+	const int DAMAGE_PER_FRAME = 5;
+	const int COINS_PER_FRAME = 1;
+	const int MAX_FRAMES = 100;
 
-    int totalResources = 0;
+	bool isRunning = true;
+	int frame = 0;
+	int playerHealth = 100;
+	int playerCoins = 0;
 
-    std::cout << "=== SIMULATION START ===" << std::endl;
+	GameState currentState = GameState::Menu;
+	std::cout << "=== MINI GAME LOOP START ===" << std::endl;
 
-    for (int day = 1; day <= TOTAL_DAYS; day++)
-    {
-        totalResources += RESOURCES_PER_DAY;
+	while (isRunning)
+	{
+		frame++;
 
-        std::cout << "Day " << day << std::endl;
-        std::cout << "Resources Produced Today: " << RESOURCES_PER_DAY << std::endl;
-        std::cout << "Total Resources: " << totalResources << std::endl;
+		// 1. Process
+		if (currentState == GameState::Menu)
+		{
+			std::cout << "Starting Game." << std::endl;
+			currentState = GameState::Playing;
+		}
 
-        if (day == 3)
-        {
-            std::cout << "A special event happened." << std::endl;
-        }
+		// 2. Update
+		if (currentState == GameState::Playing)
+		{
+			playerHealth -= DAMAGE_PER_FRAME;
+			playerCoins += COINS_PER_FRAME;
+		}
 
-        std::cout << std::endl;
-    }
+		// 3. Check
+		if (playerHealth <= 0)
+		{
+			playerHealth = 0;
+			currentState = GameState::GameOver;
+		}
 
-    std::cout << "Simulation finished." << std::endl;
-    std::cout << "Final Resources: " << totalResources << std::endl;
+		if (frame >= MAX_FRAMES)
+		{
+			isRunning = false;
+		}	
+
+		// 4. Show State
+		std::cout << std::endl;
+		std::cout << "Frame: " << frame << std::endl;
+		std::cout << "Health: " << playerHealth << std::endl;
+		std::cout << "Coins: " << playerCoins << std::endl;		
+
+		if (currentState == GameState::Playing)
+		{
+			std::cout << "State Playing" << std::endl;
+		}
+
+		if (currentState == GameState::GameOver)
+		{
+			std::cout << "State: GameOver" << std::endl;
+			std::cout << "Player defeated." << std::endl;
+			isRunning = false;
+		}		
+	}
+
+	std::cout << std::endl;
+	std::cout << "=== MINI GAME LOOP FINISHED ===" << std::endl;
+	std::cout << "Frames: " << frame << std::endl;
+	std::cout << "Final Health: " << playerHealth << std::endl;
+	std::cout << "Final Coins: " << playerCoins << std::endl;
 
 	return 0;
 }
