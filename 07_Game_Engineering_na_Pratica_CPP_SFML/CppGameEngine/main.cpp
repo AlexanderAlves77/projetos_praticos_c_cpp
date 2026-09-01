@@ -7,11 +7,15 @@ enum class GameState
 	GameOver
 };
 
+void ShowGameStart();
+void ShowStartGameMessage();
+void ShowSeparator();
+void ShowGameOver();
+void ShowGameFinished();
+
 int main()
 {
-	const int DAMAGE_PER_FRAME = 5;
-	const int COINS_PER_FRAME = 1;
-	const int MAX_FRAMES = 100;
+	const int DAMAGE_PER_FRAME = 25;
 
 	bool isRunning = true;
 	int frame = 0;
@@ -19,7 +23,10 @@ int main()
 	int playerCoins = 0;
 
 	GameState currentState = GameState::Menu;
-	std::cout << "=== MINI GAME LOOP START ===" << std::endl;
+
+	ShowSeparator();
+	ShowGameStart();
+	ShowSeparator();
 
 	while (isRunning)
 	{
@@ -28,7 +35,8 @@ int main()
 		// 1. Process
 		if (currentState == GameState::Menu)
 		{
-			std::cout << "Starting Game." << std::endl;
+			ShowStartGameMessage();
+
 			currentState = GameState::Playing;
 		}
 
@@ -36,7 +44,7 @@ int main()
 		if (currentState == GameState::Playing)
 		{
 			playerHealth -= DAMAGE_PER_FRAME;
-			playerCoins += COINS_PER_FRAME;
+			playerCoins++;
 		}
 
 		// 3. Check
@@ -46,35 +54,48 @@ int main()
 			currentState = GameState::GameOver;
 		}
 
-		if (frame >= MAX_FRAMES)
-		{
-			isRunning = false;
-		}	
-
 		// 4. Show State
-		std::cout << std::endl;
 		std::cout << "Frame: " << frame << std::endl;
 		std::cout << "Health: " << playerHealth << std::endl;
 		std::cout << "Coins: " << playerCoins << std::endl;		
-
-		if (currentState == GameState::Playing)
-		{
-			std::cout << "State Playing" << std::endl;
-		}
+		std::cout << std::endl;
 
 		if (currentState == GameState::GameOver)
 		{
-			std::cout << "State: GameOver" << std::endl;
-			std::cout << "Player defeated." << std::endl;
+			ShowGameOver();
+
 			isRunning = false;
 		}		
 	}
 
-	std::cout << std::endl;
-	std::cout << "=== MINI GAME LOOP FINISHED ===" << std::endl;
-	std::cout << "Frames: " << frame << std::endl;
-	std::cout << "Final Health: " << playerHealth << std::endl;
-	std::cout << "Final Coins: " << playerCoins << std::endl;
+	ShowSeparator();
+	ShowGameFinished();
+	ShowSeparator();
 
 	return 0;
+}
+
+void ShowGameStart()
+{
+	std::cout << "=== MINI GAME LOOP START ===" << std::endl;
+}
+
+void ShowStartGameMessage()
+{
+	std::cout << "Starting Game." << std::endl;
+}
+
+void ShowSeparator()
+{
+	std::cout << "--------------------------------" << std::endl;
+}
+
+void ShowGameOver()
+{
+	std::cout << "Player defeated." << std::endl;
+}
+
+void ShowGameFinished()
+{
+	std::cout << "=== MINI GAME LOOP FINISHED ===" << std::endl;
 }
