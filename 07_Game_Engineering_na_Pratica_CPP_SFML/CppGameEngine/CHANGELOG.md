@@ -85,6 +85,12 @@ O projeto pretende adotar versionamento formal quando sua maturidade justificar 
 - Added boundary validation for loop conditions.
 - Added intentional infinite-loop and off-by-one exercises.
 
+- Added counted repetition using `for`.
+- Added day-based iteration with explicit initialization, condition, and update.
+- Added increasing, decreasing, and stepped loop examples.
+- Added resource production simulation across multiple iterations.
+- Added boundary and off-by-one validation scenarios.
+
 ### Changed
 
 - Replaced integer-based season values with a strongly typed `Season` enum class.
