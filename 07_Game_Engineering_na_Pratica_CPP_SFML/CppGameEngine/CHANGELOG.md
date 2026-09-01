@@ -50,6 +50,11 @@ O projeto pretende adotar versionamento formal quando sua maturidade justificar 
 - Added default player speed configuration.
 - Added separation between game rules and mutable player state.
 
+- Added arithmetic operations for player state updates.
+- Added compound assignment examples for health, coins, and experience.
+- Added critical damage calculation using multiplication.
+- Added integer division and remainder examples for experience progression.
+
 
 ---
 
