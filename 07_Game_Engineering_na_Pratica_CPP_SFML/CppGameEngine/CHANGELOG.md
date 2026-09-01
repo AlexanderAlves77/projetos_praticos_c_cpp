@@ -61,6 +61,12 @@ O projeto pretende adotar versionamento formal quando sua maturidade justificar 
 - Added floating-point health percentage calculation.
 - Added manual validation examples for expression results.
 
+- Added conditional gameplay decisions using `if`.
+- Added comparison operators for health, coins, and experience rules.
+- Added health clamping logic to prevent negative values.
+- Added conditional item purchase validation.
+- Added safe execution example for potentially invalid operations.
+
 
 ---
 
