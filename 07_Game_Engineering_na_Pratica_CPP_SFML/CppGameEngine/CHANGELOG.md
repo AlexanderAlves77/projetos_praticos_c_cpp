@@ -98,6 +98,8 @@ O projeto pretende adotar versionamento formal quando sua maturidade justificar 
 - Added loop termination based on gameplay state.
 - Added a temporary maximum-frame safeguard for learning scenarios.
 
+- Added introductory examples for `void` functions and function calls.
+
 ### Changed
 
 - Replaced integer-based season values with a strongly typed `Season` enum class.
@@ -108,6 +110,11 @@ O projeto pretende adotar versionamento formal quando sua maturidade justificar 
 
 - Removed integer constants previously used to represent seasons.
 - Improved type safety and semantic clarity for season state.
+
+- Extracted console output behavior into named functions.
+- Added function declarations and definitions to organize `main.cpp`.
+- Reduced repeated console output details inside the main execution flow.
+- Preserved the existing mini Game Loop behavior after refactoring.
 
 
 ---
