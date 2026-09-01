@@ -100,6 +100,10 @@ O projeto pretende adotar versionamento formal quando sua maturidade justificar 
 
 - Added introductory examples for `void` functions and function calls.
 
+- Added examples of function parameters and call arguments.
+- Added multiple-parameter function examples.
+- Added pass-by-value demonstrations.
+
 ### Changed
 
 - Replaced integer-based season values with a strongly typed `Season` enum class.
@@ -116,6 +120,10 @@ O projeto pretende adotar versionamento formal quando sua maturidade justificar 
 - Reduced repeated console output details inside the main execution flow.
 - Preserved the existing mini Game Loop behavior after refactoring.
 
+- Updated console output functions to receive game state through parameters.
+- Extracted player state and game summary output from the main Game Loop.
+- Reduced direct console output responsibilities inside `main()`.
+- Kept game state dependencies explicit without introducing global variables.
 
 ---
 
