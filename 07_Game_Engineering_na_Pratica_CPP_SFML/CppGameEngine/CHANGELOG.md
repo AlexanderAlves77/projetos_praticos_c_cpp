@@ -91,6 +91,13 @@ O projeto pretende adotar versionamento formal quando sua maturidade justificar 
 - Added resource production simulation across multiple iterations.
 - Added boundary and off-by-one validation scenarios.
 
+- Added the first console-based mini Game Loop.
+- Added continuous execution controlled by an `isRunning` state.
+- Added basic `GameState` transitions between menu, playing, and game over.
+- Added repeated player state updates for health and coins.
+- Added loop termination based on gameplay state.
+- Added a temporary maximum-frame safeguard for learning scenarios.
+
 ### Changed
 
 - Replaced integer-based season values with a strongly typed `Season` enum class.
