@@ -55,6 +55,12 @@ O projeto pretende adotar versionamento formal quando sua maturidade justificar 
 - Added critical damage calculation using multiplication.
 - Added integer division and remainder examples for experience progression.
 
+- Added compound gameplay expressions.
+- Added damage calculation using arithmetic precedence and parentheses.
+- Added intermediate values for clearer expression evaluation.
+- Added floating-point health percentage calculation.
+- Added manual validation examples for expression results.
+
 
 ---
 
