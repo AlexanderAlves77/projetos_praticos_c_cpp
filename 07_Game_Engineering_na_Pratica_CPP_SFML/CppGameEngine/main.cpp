@@ -3,38 +3,35 @@
 int main()
 {
     const int MAX_PLAYER_HEALTH = 100;
-    const int EXPERIENCE_PER_LEVEL = 100;
 
-    int playerHealth = MAX_PLAYER_HEALTH;
-    int playerCoins = 25;
-    int playerExperience = 40;
-    int playerLevel = 1;
-    int baseDamage = 15;
+    int playerHealth = 75;
+    int baseDamage = 20;
+    int bonusDamage = 10;
     int criticalMultiplier = 2;
+    int armor = 15;
 
-    std::cout << "=== INITIAL STATE ===" << std::endl;
-    std::cout << "Health: " << playerHealth << std::endl;
-    std::cout << "Coins: " << playerCoins << std::endl;
-    std::cout << "Experience: " << playerExperience << std::endl;
-    std::cout << "Level: " << playerLevel << std::endl;
+    int rawDamage = (baseDamage + bonusDamage) * criticalMultiplier;
+    int finalDamage = rawDamage - armor;
 
-    int criticalDamage = baseDamage * criticalMultiplier;
+    float currentHealth = 75.0f;
+    float maximumHealth = 100.0f;
+    float healthPercentage = currentHealth / maximumHealth * 100.0f;
 
-    playerHealth -= criticalDamage;
-    playerCoins += 20;
-    playerExperience += 160;
-
-    int completedLevels = playerExperience / EXPERIENCE_PER_LEVEL;
-    int remainingExperience = playerExperience % EXPERIENCE_PER_LEVEL;
+    std::cout << "=== PLAYER STATE ===" << std::endl;
+    std::cout << "Health: " << playerHealth << " / " << MAX_PLAYER_HEALTH << std::endl;
 
     std::cout << std::endl;
-    std::cout << "=== AFTER GAMEPLAY EVENTS ===" << std::endl;
-    std::cout << "Critical Damage: " << criticalDamage << std::endl;
-    std::cout << "Health: " << playerHealth << std::endl;
-    std::cout << "Coins: " << playerCoins << std::endl;
-    std::cout << "Total Experience: " << playerExperience << std::endl;
-    std::cout << "Completed Level Units: " << completedLevels << std::endl;
-    std::cout << "Remaining Experience: " << remainingExperience << std::endl;
+    std::cout << "=== DAMAGE CALCULATION ===" << std::endl;
+    std::cout << "Base Damage: " << baseDamage << std::endl;
+    std::cout << "Bonus Damage: " << bonusDamage << std::endl;
+    std::cout << "Critical Multiplier: " << criticalMultiplier << std::endl;
+    std::cout << "Armor: " << armor << std::endl;
+    std::cout << "Raw Damage: " << rawDamage << std::endl;
+    std::cout << "Final Damage: " << finalDamage << std::endl;
+
+    std::cout << std::endl;
+    std::cout << "=== HEALTH CALCULATION ===" << std::endl;
+    std::cout << "Health Percentage: " << healthPercentage << "%" << std::endl;
 
 	return 0;
 }
