@@ -2,36 +2,51 @@
 
 int main()
 {
-    const int MAX_PLAYER_HEALTH = 100;
+    const int EXPERIENCE_REQUIRED = 100;
 
-    int playerHealth = 75;
-    int baseDamage = 20;
-    int bonusDamage = 10;
-    int criticalMultiplier = 2;
-    int armor = 15;
+    int playerHealth = 30;
+    int damage = 50;
+    int playerCoins = 80;
+    int itemPrice = 50;
+    int playerExperience = 120;
 
-    int rawDamage = (baseDamage + bonusDamage) * criticalMultiplier;
-    int finalDamage = rawDamage - armor;
+    std::cout << "=== INITIAL STATE ===" << std::endl;
+    std::cout << "Health: " << playerHealth << std::endl;
+    std::cout << "Coins: " << playerCoins << std::endl;
+    std::cout << "Experience: " << playerExperience << std::endl;
 
-    float currentHealth = 75.0f;
-    float maximumHealth = 100.0f;
-    float healthPercentage = currentHealth / maximumHealth * 100.0f;
+    int newHealth = playerHealth - damage;
 
-    std::cout << "=== PLAYER STATE ===" << std::endl;
-    std::cout << "Health: " << playerHealth << " / " << MAX_PLAYER_HEALTH << std::endl;
+    if (newHealth < 0)
+    {
+        newHealth = 0;
+    }
+
+    playerHealth = newHealth;
+
+    if (playerHealth <= 0)
+    {
+        std::cout << std::endl;
+        std::cout << "Player defeated." << std::endl;
+    }
+
+    if (playerCoins >= itemPrice)
+    {
+        playerCoins -= itemPrice;
+
+        std::cout << "Item purchased." << std::endl;
+    }
+
+    if (playerExperience >= EXPERIENCE_REQUIRED)
+    {
+        std::cout << "Experience requirement reached." << std::endl;
+    }
 
     std::cout << std::endl;
-    std::cout << "=== DAMAGE CALCULATION ===" << std::endl;
-    std::cout << "Base Damage: " << baseDamage << std::endl;
-    std::cout << "Bonus Damage: " << bonusDamage << std::endl;
-    std::cout << "Critical Multiplier: " << criticalMultiplier << std::endl;
-    std::cout << "Armor: " << armor << std::endl;
-    std::cout << "Raw Damage: " << rawDamage << std::endl;
-    std::cout << "Final Damage: " << finalDamage << std::endl;
-
-    std::cout << std::endl;
-    std::cout << "=== HEALTH CALCULATION ===" << std::endl;
-    std::cout << "Health Percentage: " << healthPercentage << "%" << std::endl;
+    std::cout << "=== CURRENT STATE ===" << std::endl;
+    std::cout << "Health: " << playerHealth << std::endl;
+    std::cout << "Coins: " << playerCoins << std::endl;
+    std::cout << "Experience: " << playerExperience << std::endl;
 
 	return 0;
 }
