@@ -12,6 +12,9 @@ void ShowStartGameMessage();
 void ShowSeparator();
 void ShowGameOver();
 void ShowGameFinished();
+void ShowPlayerHealth(int playerHealth);
+void ShowPlayerState(int frame, int playerHealth, int playerCoins);
+void ShowGameSummary(int frame, int playerHealth, int playerCoins);
 
 int main()
 {
@@ -21,6 +24,8 @@ int main()
 	int frame = 0;
 	int playerHealth = 100;
 	int playerCoins = 0;
+
+	ShowPlayerHealth(playerHealth);
 
 	GameState currentState = GameState::Menu;
 
@@ -55,10 +60,7 @@ int main()
 		}
 
 		// 4. Show State
-		std::cout << "Frame: " << frame << std::endl;
-		std::cout << "Health: " << playerHealth << std::endl;
-		std::cout << "Coins: " << playerCoins << std::endl;		
-		std::cout << std::endl;
+		ShowPlayerState(frame, playerHealth, playerCoins);		
 
 		if (currentState == GameState::GameOver)
 		{
@@ -70,6 +72,7 @@ int main()
 
 	ShowSeparator();
 	ShowGameFinished();
+	ShowGameSummary(frame, playerHealth, playerCoins);
 	ShowSeparator();
 
 	return 0;
@@ -93,6 +96,27 @@ void ShowSeparator()
 void ShowGameOver()
 {
 	std::cout << "Player defeated." << std::endl;
+}
+
+
+void ShowPlayerHealth(int playerHealth)
+{
+	std::cout << "Health: " << playerHealth << std::endl;
+}
+
+void ShowPlayerState(int frame, int playerHealth, int playerCoins)
+{
+	std::cout << "Frame: " << frame << std::endl;
+	std::cout << "Health: " << playerHealth << std::endl;
+	std::cout << "Coins: " << playerCoins << std::endl;
+	std::cout << std::endl;
+}
+
+void ShowGameSummary(int frame, int playerHealth, int playerCoins)
+{
+	std::cout << "Frames: " << frame << std::endl;
+	std::cout << "Health: " << playerHealth << std::endl;
+	std::cout << "Final Coins: " << playerCoins << std::endl;
 }
 
 void ShowGameFinished()
