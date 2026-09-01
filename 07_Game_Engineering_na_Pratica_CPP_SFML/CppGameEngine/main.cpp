@@ -3,34 +3,38 @@
 int main()
 {
     const int MAX_PLAYER_HEALTH = 100;
-    const int MAX_INVENTORY_SLOTS = 20;
-    const float DEFAULT_PLAYER_SPEED = 4.5f;
+    const int EXPERIENCE_PER_LEVEL = 100;
 
     int playerHealth = MAX_PLAYER_HEALTH;
-    int inventorySlotsUsed = 5;
-    float playerSpeed = DEFAULT_PLAYER_SPEED;
+    int playerCoins = 25;
+    int playerExperience = 40;
+    int playerLevel = 1;
+    int baseDamage = 15;
+    int criticalMultiplier = 2;
 
-    std::cout << "=== GAME RULES ===" << std::endl;
-    std::cout << "Maximum Health: " << MAX_PLAYER_HEALTH << std::endl;
-    std::cout << "Maximum Inventory Slots: " << MAX_INVENTORY_SLOTS << std::endl;
-    std::cout << "Default Player Speed: " << DEFAULT_PLAYER_SPEED << std::endl;
+    std::cout << "=== INITIAL STATE ===" << std::endl;
+    std::cout << "Health: " << playerHealth << std::endl;
+    std::cout << "Coins: " << playerCoins << std::endl;
+    std::cout << "Experience: " << playerExperience << std::endl;
+    std::cout << "Level: " << playerLevel << std::endl;
+
+    int criticalDamage = baseDamage * criticalMultiplier;
+
+    playerHealth -= criticalDamage;
+    playerCoins += 20;
+    playerExperience += 160;
+
+    int completedLevels = playerExperience / EXPERIENCE_PER_LEVEL;
+    int remainingExperience = playerExperience % EXPERIENCE_PER_LEVEL;
 
     std::cout << std::endl;
-
-    std::cout << "=== PLAYER STATE ===" << std::endl;
-    std::cout << "Current Health: " << playerHealth << std::endl;
-    std::cout << "Inventory Used: " << inventorySlotsUsed << std::endl;
-    std::cout << "Current Speed: " << playerSpeed << std::endl;
-
-    playerHealth = playerHealth - 20;
-    inventorySlotsUsed = inventorySlotsUsed + 1;
-
-    std::cout << std::endl;
-
-    std::cout << "=== UPDATED PLAYER STATE ===" << std::endl;
-    std::cout << "Current Health: " << playerHealth << std::endl;
-    std::cout << "Inventory Used: " << inventorySlotsUsed << std::endl;
-    std::cout << "Current Speed: " << playerSpeed << std::endl;
+    std::cout << "=== AFTER GAMEPLAY EVENTS ===" << std::endl;
+    std::cout << "Critical Damage: " << criticalDamage << std::endl;
+    std::cout << "Health: " << playerHealth << std::endl;
+    std::cout << "Coins: " << playerCoins << std::endl;
+    std::cout << "Total Experience: " << playerExperience << std::endl;
+    std::cout << "Completed Level Units: " << completedLevels << std::endl;
+    std::cout << "Remaining Experience: " << remainingExperience << std::endl;
 
 	return 0;
 }
