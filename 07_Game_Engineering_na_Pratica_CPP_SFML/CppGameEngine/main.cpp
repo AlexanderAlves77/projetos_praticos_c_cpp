@@ -1,34 +1,37 @@
 #include <iostream>
 
+enum class Season 
+{
+    Spring,
+    Summer,
+    Autumn,
+    Winter
+};
+
 int main()
 {
-    const int SPRING = 1;
-    const int SUMMER = 2;
-    const int AUTUMN = 3;
-    const int WINTER = 4;
-
-    int currentSeason = SUMMER;
+    Season currentSeason = Season::Summer;
 
     std::cout << "=== CURRENT SEASON ===" << std::endl;
 
     switch (currentSeason)
     {
-    case SPRING:
+    case Season::Spring:
         std::cout << "Spring" << std::endl;
         std::cout << "Flowers begin to bloom." << std::endl;
         break;
 
-    case SUMMER:
+    case Season::Summer:
         std::cout << "Summer" << std::endl;
         std::cout << "Days are longer and warmer." << std::endl;
         break;
 
-    case AUTUMN:
+    case Season::Autumn:
         std::cout << "Autumn" << std::endl;
         std::cout << "Leaves begin to fall." << std::endl;
         break;
 
-    case WINTER:
+    case Season::Winter:
         std::cout << "Winter" << std::endl;
         std::cout << "Cold weather reaches the farm." << std::endl;
         break;
