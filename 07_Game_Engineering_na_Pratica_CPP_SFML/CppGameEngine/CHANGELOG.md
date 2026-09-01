@@ -79,6 +79,17 @@ O projeto pretende adotar versionamento formal quando sua maturidade justificar 
 - Added season-based gameplay example using named constants.
 - Added manual validation scenarios for every switch case and unknown values.
 
+### Changed
+
+- Replaced integer-based season values with a strongly typed `Season` enum class.
+- Updated season selection to use named `Season` values.
+- Updated season `switch` cases to use scoped enumerators.
+
+### Refactored
+
+- Removed integer constants previously used to represent seasons.
+- Improved type safety and semantic clarity for season state.
+
 
 ---
 
