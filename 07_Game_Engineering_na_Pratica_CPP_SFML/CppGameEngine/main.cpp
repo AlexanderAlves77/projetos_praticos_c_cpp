@@ -2,43 +2,42 @@
 
 int main()
 {
-    const int EXPERIENCE_REQUIRED = 100;
+    const int SPRING = 1;
+    const int SUMMER = 2;
+    const int AUTUMN = 3;
+    const int WINTER = 4;
 
-    int playerCoins = 30;
-    int itemPrice = 50;
-    int playerExperience = 80;
+    int currentSeason = SUMMER;
 
-    std::cout << "=== PURCHASE ===" << std::endl;
+    std::cout << "=== CURRENT SEASON ===" << std::endl;
 
-    if (playerCoins >= itemPrice)
+    switch (currentSeason)
     {
-        playerCoins -= itemPrice;
+    case SPRING:
+        std::cout << "Spring" << std::endl;
+        std::cout << "Flowers begin to bloom." << std::endl;
+        break;
 
-        std::cout << "Item purchased." << std::endl;
-        std::cout << "Coins Left: " << playerCoins << std::endl;
+    case SUMMER:
+        std::cout << "Summer" << std::endl;
+        std::cout << "Days are longer and warmer." << std::endl;
+        break;
+
+    case AUTUMN:
+        std::cout << "Autumn" << std::endl;
+        std::cout << "Leaves begin to fall." << std::endl;
+        break;
+
+    case WINTER:
+        std::cout << "Winter" << std::endl;
+        std::cout << "Cold weather reaches the farm." << std::endl;
+        break;
+
+    default:
+        std::cout << "Unknown season." << std::endl;
+        break;
     }
-    else
-    {
-        int missingCoins = itemPrice - playerCoins;
 
-        std::cout << "Not enough coins." << std::endl;
-        std::cout << "Missing Coins: " << missingCoins << std::endl;
-    }
-
-    std::cout << std::endl;
-    std::cout << "=== EXPERIENCE ===" << std::endl;
-
-    if (playerExperience >= EXPERIENCE_REQUIRED)
-    {
-        std::cout << "Experience requirement reached." << std::endl;
-    }
-    else
-    {
-        int missingExperience = EXPERIENCE_REQUIRED - playerExperience;
-
-        std::cout << "More experience required." << std::endl;
-        std::cout << "Missing Experience: " << missingExperience << std::endl;
-    }
 
 	return 0;
 }
