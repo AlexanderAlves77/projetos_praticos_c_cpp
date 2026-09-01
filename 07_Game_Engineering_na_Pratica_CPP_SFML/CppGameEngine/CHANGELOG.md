@@ -79,6 +79,12 @@ O projeto pretende adotar versionamento formal quando sua maturidade justificar 
 - Added season-based gameplay example using named constants.
 - Added manual validation scenarios for every switch case and unknown values.
 
+- Added controlled repetition using `while`.
+- Added day-based simulation with loop state updates.
+- Added conditional event handling inside a loop.
+- Added boundary validation for loop conditions.
+- Added intentional infinite-loop and off-by-one exercises.
+
 ### Changed
 
 - Replaced integer-based season values with a strongly typed `Season` enum class.
