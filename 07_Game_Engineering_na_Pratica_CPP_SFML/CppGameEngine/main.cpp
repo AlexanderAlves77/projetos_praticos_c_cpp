@@ -1,46 +1,25 @@
 #include <iostream>
 
-enum class Season 
-{
-    Spring,
-    Summer,
-    Autumn,
-    Winter
-};
-
 int main()
 {
-    Season currentSeason = Season::Summer;
+    int day = 1;
+    const int TOTAL_DAYS = 5;
 
-    std::cout << "=== CURRENT SEASON ===" << std::endl;
+    std::cout << "=== SIMULATION START ===" << std::endl;
 
-    switch (currentSeason)
+    while (day <= TOTAL_DAYS)
     {
-    case Season::Spring:
-        std::cout << "Spring" << std::endl;
-        std::cout << "Flowers begin to bloom." << std::endl;
-        break;
+        std::cout << "Day " << day << std::endl;
 
-    case Season::Summer:
-        std::cout << "Summer" << std::endl;
-        std::cout << "Days are longer and warmer." << std::endl;
-        break;
+        if (day == 3)
+        {
+            std::cout << "A special event happened." << std::endl;
+        }
 
-    case Season::Autumn:
-        std::cout << "Autumn" << std::endl;
-        std::cout << "Leaves begin to fall." << std::endl;
-        break;
-
-    case Season::Winter:
-        std::cout << "Winter" << std::endl;
-        std::cout << "Cold weather reaches the farm." << std::endl;
-        break;
-
-    default:
-        std::cout << "Unknown season." << std::endl;
-        break;
+        day++;
     }
 
+    std::cout << "Simulation finished." << std::endl;
 
 	return 0;
 }
