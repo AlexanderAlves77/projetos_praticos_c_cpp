@@ -73,6 +73,12 @@ O projeto pretende adotar versionamento formal quando sua maturidade justificar 
 - Added experience requirement feedback for both decision outcomes.
 - Added boundary scenario validation for conditional rules.
 
+- Added multi-option decision handling using `switch`.
+- Added `case`, `break`, and `default` examples.
+- Added intentional fallthrough validation for learning purposes.
+- Added season-based gameplay example using named constants.
+- Added manual validation scenarios for every switch case and unknown values.
+
 
 ---
 
