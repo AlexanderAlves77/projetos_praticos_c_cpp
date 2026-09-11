@@ -1,125 +1,67 @@
 #include <iostream>
+#include <string>
 
-enum class GameState
-{
-	Menu,
-	Playing,
-	GameOver
-};
-
-void ShowGameStart();
-void ShowStartGameMessage();
-void ShowSeparator();
-void ShowGameOver();
-void ShowGameFinished();
-void ShowPlayerHealth(int playerHealth);
-void ShowPlayerState(int frame, int playerHealth, int playerCoins);
-void ShowGameSummary(int frame, int playerHealth, int playerCoins);
+std::string BuildGreeting(std::string playerName);
+void ShowDialogue(std::string speakerName, std::string dialogue);
+void ShowPlayerInfo(std::string playerName, std::string locationName, int playerHealth, int playerCoins);
 
 int main()
 {
-	const int DAMAGE_PER_FRAME = 25;
+    std::string playerName = "Alex";
+    std::string npcName = "Guard";
+    std::string locationName = "Initial Forest";
+    std::string dialogue = "Welcome to the Initial Forest.";
 
-	bool isRunning = true;
-	int frame = 0;
-	int playerHealth = 100;
-	int playerCoins = 0;
+    int playerHealth = 100;
+    int playerCoins = 25;
 
-	ShowPlayerHealth(playerHealth);
+    std::string greeting = BuildGreeting(playerName);
+    std::cout << "=== GAME TEXT DATA ===" << std::endl;
+    std::cout << greeting << std::endl;
+    std::cout << std::endl;
 
-	GameState currentState = GameState::Menu;
+    ShowPlayerInfo(playerName, locationName, playerHealth, playerCoins);
+    std::cout << std::endl;
 
-	ShowSeparator();
-	ShowGameStart();
-	ShowSeparator();
+    ShowDialogue(npcName, dialogue);
+    std::cout << std::endl;
 
-	while (isRunning)
-	{
-		frame++;
+    std::cout << "Player Name Length: " << playerName.size() << std::endl;
 
-		// 1. Process
-		if (currentState == GameState::Menu)
-		{
-			ShowStartGameMessage();
+    if (playerName.empty())
+    {
+        std::cout << "Player name is empty." << std::endl;
+    }
+    else
+    {
+        std::cout << "Player name is valid for this example." << std::endl;
+    }
 
-			currentState = GameState::Playing;
-		}
+    std::cout << std::endl;
+    std::cout << "Characters:" << std::endl;
 
-		// 2. Update
-		if (currentState == GameState::Playing)
-		{
-			playerHealth -= DAMAGE_PER_FRAME;
-			playerCoins++;
-		}
+    for (std::size_t index = 0; index < playerName.size(); index++)
+    {
+        std::cout << index << ": " << playerName[index] << std::endl;
+    }
 
-		// 3. Check
-		if (playerHealth <= 0)
-		{
-			playerHealth = 0;
-			currentState = GameState::GameOver;
-		}
-
-		// 4. Show State
-		ShowPlayerState(frame, playerHealth, playerCoins);		
-
-		if (currentState == GameState::GameOver)
-		{
-			ShowGameOver();
-
-			isRunning = false;
-		}		
-	}
-
-	ShowSeparator();
-	ShowGameFinished();
-	ShowGameSummary(frame, playerHealth, playerCoins);
-	ShowSeparator();
-
-	return 0;
+    return 0;
 }
 
-void ShowGameStart()
+std::string BuildGreeting(std::string playerName)
 {
-	std::cout << "=== MINI GAME LOOP START ===" << std::endl;
+    return "Welcome, " + playerName + "!";
 }
 
-void ShowStartGameMessage()
+void ShowDialogue(std::string speakerName, std::string dialogue)
 {
-	std::cout << "Starting Game." << std::endl;
+    std::cout << speakerName << ": " << dialogue << std::endl;
 }
 
-void ShowSeparator()
+void ShowPlayerInfo(std::string playerName, std::string locationName, int playerHealth, int playerCoins)
 {
-	std::cout << "--------------------------------" << std::endl;
-}
-
-void ShowGameOver()
-{
-	std::cout << "Player defeated." << std::endl;
-}
-
-
-void ShowPlayerHealth(int playerHealth)
-{
-	std::cout << "Health: " << playerHealth << std::endl;
-}
-
-void ShowPlayerState(int frame, int playerHealth, int playerCoins)
-{
-	std::cout << "Frame: " << frame << std::endl;
-	std::cout << "Health: " << playerHealth << std::endl;
-	std::cout << "Coins: " << playerCoins << std::endl;
-	std::cout << std::endl;
-}
-
-void ShowGameSummary(int frame, int playerHealth, int playerCoins)
-{
-	std::cout << "Frames: " << frame << std::endl;
-	std::cout << "Health: " << playerHealth << std::endl;
-	std::cout << "Final Coins: " << playerCoins << std::endl;
-}
-
-void ShowGameFinished()
-{
-	std::cout << "=== MINI GAME LOOP FINISHED ===" << std::endl;
+    std::cout << "Player: " << playerName << std::endl;
+    std::cout << "Location: " << locationName << std::endl;
+    std::cout << "Health: " << playerHealth << std::endl;
+    std::cout << "Coins: " << playerCoins << std::endl;
 }
