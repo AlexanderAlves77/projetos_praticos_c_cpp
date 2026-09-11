@@ -104,6 +104,13 @@ O projeto pretende adotar versionamento formal quando sua maturidade justificar 
 - Added multiple-parameter function examples.
 - Added pass-by-value demonstrations.
 
+- Added `std::string` for player, NPC, location, and dialogue text data.
+- Added string assignment and concatenation examples.
+- Added string size and empty-state validation.
+- Added basic string comparison examples.
+- Added indexed character iteration.
+- Added string parameters and return values in helper functions.
+
 ### Changed
 
 - Replaced integer-based season values with a strongly typed `Season` enum class.
