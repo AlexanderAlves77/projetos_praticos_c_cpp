@@ -111,6 +111,13 @@ O projeto pretende adotar versionamento formal quando sua maturidade justificar 
 - Added indexed character iteration.
 - Added string parameters and return values in helper functions.
 
+- Added fixed-size C++ arrays for score and item collections.
+- Added indexed array element access and modification.
+- Added loop-based array traversal.
+- Added total, average, and highest-score calculations.
+- Added array initialization and boundary-safety examples.
+- Added string arrays for simple item collections.
+
 ### Changed
 
 - Replaced integer-based season values with a strongly typed `Season` enum class.
