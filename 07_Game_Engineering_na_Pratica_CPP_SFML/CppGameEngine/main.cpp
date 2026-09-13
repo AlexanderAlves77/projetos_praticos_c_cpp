@@ -1,67 +1,57 @@
 #include <iostream>
 #include <string>
 
-std::string BuildGreeting(std::string playerName);
-void ShowDialogue(std::string speakerName, std::string dialogue);
-void ShowPlayerInfo(std::string playerName, std::string locationName, int playerHealth, int playerCoins);
-
 int main()
 {
-    std::string playerName = "Alex";
-    std::string npcName = "Guard";
-    std::string locationName = "Initial Forest";
-    std::string dialogue = "Welcome to the Initial Forest.";
+    const int SCORE_COUNT = 5;
+    const int ITEM_COUNT = 3;
 
-    int playerHealth = 100;
-    int playerCoins = 25;
-
-    std::string greeting = BuildGreeting(playerName);
-    std::cout << "=== GAME TEXT DATA ===" << std::endl;
-    std::cout << greeting << std::endl;
-    std::cout << std::endl;
-
-    ShowPlayerInfo(playerName, locationName, playerHealth, playerCoins);
-    std::cout << std::endl;
-
-    ShowDialogue(npcName, dialogue);
-    std::cout << std::endl;
-
-    std::cout << "Player Name Length: " << playerName.size() << std::endl;
-
-    if (playerName.empty())
+    int scores[SCORE_COUNT] =
     {
-        std::cout << "Player name is empty." << std::endl;
+        100,
+        200,
+        150,
+        300,
+        250
+    };
+
+    std::string items[ITEM_COUNT] =
+    {
+        "Sword",
+        "Shield",
+        "Potion"
+    };
+
+    std::cout << "=== SCORES ===" << std::endl;
+
+    int totalScore = 0;
+    int highestScore = scores[0];
+
+    for (int index = 0; index < SCORE_COUNT; index++)
+    {
+        std::cout << "Score [" << index << "]: " << scores[index] << std::endl;
+
+        totalScore += scores[index];
+
+        if (scores[index] > highestScore)
+        {
+            highestScore = scores[index];
+        }
     }
-    else
-    {
-        std::cout << "Player name is valid for this example." << std::endl;
-    }
+
+    int averageScore = totalScore / SCORE_COUNT;
 
     std::cout << std::endl;
-    std::cout << "Characters:" << std::endl;
+    std::cout << "Total Score: " << totalScore << std::endl;
+    std::cout << "Average Score: " << averageScore << std::endl;
+    std::cout << "Highest Score: " << highestScore << std::endl;
+    std::cout << std::endl;
+    std::cout << "=== ITEMS ===" << std::endl;
 
-    for (std::size_t index = 0; index < playerName.size(); index++)
+    for (int index = 0; index < ITEM_COUNT; index++)
     {
-        std::cout << index << ": " << playerName[index] << std::endl;
+        std::cout << "Item [" << index << "]: " << items[index] << std::endl;
     }
 
     return 0;
-}
-
-std::string BuildGreeting(std::string playerName)
-{
-    return "Welcome, " + playerName + "!";
-}
-
-void ShowDialogue(std::string speakerName, std::string dialogue)
-{
-    std::cout << speakerName << ": " << dialogue << std::endl;
-}
-
-void ShowPlayerInfo(std::string playerName, std::string locationName, int playerHealth, int playerCoins)
-{
-    std::cout << "Player: " << playerName << std::endl;
-    std::cout << "Location: " << locationName << std::endl;
-    std::cout << "Health: " << playerHealth << std::endl;
-    std::cout << "Coins: " << playerCoins << std::endl;
 }
