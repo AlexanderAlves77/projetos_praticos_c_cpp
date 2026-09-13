@@ -1,12 +1,16 @@
+#include <array>
 #include <iostream>
 #include <string>
 
+void ShowScores(std::array<int, 5> scores);
+int FindHighestScore(std::array<int, 5> scores);
+int CalculateTotalScore(std::array<int, 5> scores);
+void ShowTools(std::array<std::string, 4> toolNames);
+
 int main()
 {
-    const int SCORE_COUNT = 5;
-    const int ITEM_COUNT = 3;
-
-    int scores[SCORE_COUNT] =
+    std::string playerName = "Alexander";
+    std::array<int, 5> scores =
     {
         100,
         200,
@@ -15,43 +19,86 @@ int main()
         250
     };
 
-    std::string items[ITEM_COUNT] =
+    std::array<std::string, 4> toolNames =
     {
-        "Sword",
-        "Shield",
-        "Potion"
+        "Axe",
+        "Pickaxe",
+        "Hoe",
+        "Watering Can"
     };
 
-    std::cout << "=== SCORES ===" << std::endl;
+    std::cout << "=== PLAYER ===" << std::endl;
+    std::cout << "Name: " << playerName << std::endl;
+    std::cout << std::endl;
 
-    int totalScore = 0;
-    int highestScore = scores[0];
+    std::cout << "=== ARRAY INFORMATION ===" << std::endl;
+    std::cout << "Score Count: " << scores.size() << std::endl;
+    std::cout << "First Score: " << scores.front() << std::endl;
+    std::cout << "Last Score: " << scores.back() << std::endl;
+    std::cout << std::endl;
 
-    for (int index = 0; index < SCORE_COUNT; index++)
-    {
-        std::cout << "Score [" << index << "]: " << scores[index] << std::endl;
+    ShowScores(scores);
 
-        totalScore += scores[index];
-
-        if (scores[index] > highestScore)
-        {
-            highestScore = scores[index];
-        }
-    }
-
-    int averageScore = totalScore / SCORE_COUNT;
+    int totalScore = CalculateTotalScore(scores);
+    int highestScore = FindHighestScore(scores);
 
     std::cout << std::endl;
     std::cout << "Total Score: " << totalScore << std::endl;
-    std::cout << "Average Score: " << averageScore << std::endl;
     std::cout << "Highest Score: " << highestScore << std::endl;
     std::cout << std::endl;
-    std::cout << "=== ITEMS ===" << std::endl;
 
-    for (int index = 0; index < ITEM_COUNT; index++)
-    {
-        std::cout << "Item [" << index << "]: " << items[index] << std::endl;
-    }
+    ShowTools(toolNames);
 
     return 0;
+}
+
+void ShowScores(std::array<int, 5> scores)
+{
+    std::cout << "=== SCORES ===" << std::endl;
+
+    for (std::size_t index = 0; index < scores.size(); index++)
+    {
+        std::cout
+            << "Score ["
+            << index
+            << "]: "
+            << scores[index]
+            << std::endl;
+    }
+}
+
+int CalculateTotalScore(std::array<int, 5> scores)
+{
+    int totalScore = 0;
+
+    for (int score : scores)
+    {
+        totalScore += score;
+    }
+
+    return totalScore;
+}
+
+int FindHighestScore(std::array<int, 5> scores)
+{
+    int highestScore = scores.front();
+
+    for (int score : scores)
+    {
+        if (score > highestScore)
+        {
+            highestScore = score;
+        }
+    }
+
+    return highestScore;
+}
+
+void ShowTools(std::array<std::string, 4> toolNames)
+{
+    std::cout << "=== TOOLS ===" << std::endl;
+    for (std::string toolName : toolNames)
+    {
+        std::cout << toolName << std::endl;
+    }
 }
