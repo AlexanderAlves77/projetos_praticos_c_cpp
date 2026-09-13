@@ -118,6 +118,13 @@ O projeto pretende adotar versionamento formal quando sua maturidade justificar 
 - Added array initialization and boundary-safety examples.
 - Added string arrays for simple item collections.
 
+- Added `std::array` for modern fixed-size collections.
+- Added `size()`, `empty()`, `front()`, `back()`, `at()`, and `fill()` examples.
+- Added indexed and range-based iteration examples.
+- Added fixed score and tool-name collections.
+- Added `std::array` parameters and return-value examples.
+- Added comparison between traditional arrays and `std::array`.
+
 ### Changed
 
 - Replaced integer-based season values with a strongly typed `Season` enum class.
